@@ -10,5 +10,16 @@ _$HOME/Sukoh/config.websitename.json_. The workspace configurations tells
 PoppyGo where to find the site files and where to publish the website. Normally
 this configuration needs no manual modification.
 
-
-
+| property                       | value type            | optional  | description                                                          |
+|--------------------------------|-----------------------|-----------|----------------------------------------------------------------------|
+| key                            | string                | mandatory | Keys are for internal use and must be unique                         |
+| name                           | string                | mandatory | The name of the website                                              |
+| lastPublish                    | integer               | mandatory | Timespamp with time of last publication                              |
+| publishStatus                  | integer               | mandatory | 1=published, 2=publication pending remote                            |
+| source.type                    | string                | mandatory | Depriciated: Should always be _folder_                               |
+| source.path                    | string                | mandatory | Path to the Hugo site root directory                                 |
+| publish                        | array of dictionaries | mandatory | Array with publish configurations, currently only one is supported   |
+| publish.0.key                  | string                | mandatory | Keys are for internal use and must be unique                         |
+| publish.0.config               | dictionary            | mandatory | Dictionary with publish configuration information                    |
+| publish.0.config.type          | string                | mandatory | type publication endpoint. Currently only poppygo-cloud is supported |
+| publish.0.config.defaultDomain | string                | mandatory | default live domain                                                  |

@@ -4,12 +4,18 @@ weight: 1
 bookFlatSection: true
 ---
 
-# Introduction
+# The PoppyGo App Reference Manual
 
-This is the PoppyGo Application Manual. Intended audiance are PoppyGo developers
-all over the world.
+## Introduction
+
+This is the PoppyGo App Reference Manual. Intended audiance are PoppyGo
+developers all over the world.
 
 ## About the PoppyGo App
 
 The PoppyGo App is an offline CMS specially made for maintaining Hugo websites.
 It offers content management and publishing functions.
+
+## Version
+
+This reference is up to date for version 0.9

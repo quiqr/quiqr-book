@@ -25,24 +25,19 @@ languages:
     languageName: English
     contentDir: content
     weight: 1
-  ru:
-    languageName: Russian
-    contentDir: content.ru
-    weight: 2
-  zh:
-    languageName: Chinese
-    contentDir: content.zh
-    weight: 3
 
 menu:
   # before: []
   after:
-    - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
-      weight: 10
-    - name: "Hugo Themes"
-      url: "https://themes.gohugo.io/hugo-book/"
-      weight: 20
+    - name: "PoppyGo HQ"
+      url: "https://poppygo.io"
+      weight: 40
+    - name: "github/poppygo"
+      url: "https://github.com/poppygo/"
+      weight: 60
+    - name: "@poppygoapp"
+      url: https://twitter.com/poppygoapp
+      weight: 70
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
@@ -56,7 +51,7 @@ params:
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
-  # BookLogo: /logo.png
+  BookLogo: /logo-nav.svg
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
@@ -69,12 +64,12 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/alex-shpak/hugo-book
+  BookRepo: https://gitlab.brepi.eu/platform/poppygo-book
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath: edit/master/exampleSite
+  BookEditPath: -/edit/master
 
   # Configure the date format used on the pages
   # - In git information

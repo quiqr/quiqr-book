@@ -1,8 +1,8 @@
 # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
 #image: registry.gitlab.com/pages/hugo_extended:latest
-image: peaceiris/hugo:v0.82.0
-entrypoint: [""]
-
+image:
+  name: peaceiris/hugo:v0.82.0
+  entrypoint: [""]
 
 pages:
   script:

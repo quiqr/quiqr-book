@@ -2,6 +2,7 @@
 title: Pogoform
 weight: 2
 bookFlatSection: true
+bookHidden: true
 ---
 
 # Introduction

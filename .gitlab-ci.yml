@@ -1,0 +1,4 @@
+include:
+  - project: 'platform/pogo-include'
+    ref: master
+    file: '/main.yml'

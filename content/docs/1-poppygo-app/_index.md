@@ -18,4 +18,4 @@ It offers content management and publishing functions.
 
 ## Version
 
-This reference is up to date for version 0.9
+This reference is up to date for PoppyGo Version 0.9

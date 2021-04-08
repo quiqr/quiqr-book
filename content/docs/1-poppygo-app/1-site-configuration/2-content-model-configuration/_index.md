@@ -5,7 +5,7 @@ weight: 20
 
 # Content Model Confiration
 
-For content managing PoppyGo App can create advanged forms to edit content. These
+For content managing PoppyGo App can create advanced forms to edit content. These
 forms are configured in the _sukoh.json file_. The sukoh-file can be in YAML,
 JSON or TOML-formatting. For sake of readability we use YAML for inline example
 snippets in this reference.

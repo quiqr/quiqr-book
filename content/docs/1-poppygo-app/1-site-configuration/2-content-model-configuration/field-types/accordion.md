@@ -1,6 +1,5 @@
 ---
 title: Accordion
-weight: 10
 ---
 
 # Accordion

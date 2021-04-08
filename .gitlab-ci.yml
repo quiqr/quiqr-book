@@ -3,6 +3,7 @@
 image: peaceiris/hugo:v0.82.0
 entrypoint: [""]
 
+
 pages:
   script:
   - hugo --minify

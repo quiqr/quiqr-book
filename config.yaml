@@ -27,7 +27,6 @@ languages:
     weight: 1
 
 menu:
-  # before: []
   after:
     - name: "PoppyGo HQ"
       url: "https://poppygo.io"

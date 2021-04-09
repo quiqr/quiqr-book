@@ -1,12 +1,13 @@
 ---
-title: Boolean
+title: Chips
 ---
 
-# Boolean
+# Chips
 
-The `boolean` field generates a switch. The output value is _true_ or _false_
+The `chips` field generates a field that helps creating tags of keywords from
+entered strings instantly. The output value is an array with strings.
 
-{{< figure src="../boolean.png" title="Boolean" >}}
+{{< figure src="../chips.png" title="Chips" >}}
 
 ## Properties
 
@@ -24,17 +25,13 @@ The `boolean` field generates a switch. The output value is _true_ or _false_
 fields:
   key: sample_field
   title: Sample field
-  type: boolean
+  type: chips
 ```
 
 ### Output
 
 ```yaml
-sample_field: true
-```
-
-
-## Sample frontmatter output
-
-```yaml
+sample_field:
+  - tag 1
+  - tag 2
 ```

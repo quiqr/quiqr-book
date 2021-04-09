@@ -4,7 +4,8 @@ title: Accordion
 
 # Accordion
 
-The accordion field is a container field. It can define multiple input fields.
+The `accordion` field is a container field. It can define multiple input
+fields, which are displayed as subform.
 
 ## Properties
 
@@ -20,7 +21,7 @@ The accordion field is a container field. It can define multiple input fields.
 
 ## Regular accordion
 
-Below an example of a regular accordion configuration without dynamic forms
+Below an example of a regular accordion configuration without dynamic forms.
 
 {{< figure src="../accordion.png" title="Accordion" >}}
 
@@ -46,7 +47,7 @@ fields:
 
 ## Accordion with dynamic forms defined in sukoh.yaml
 
-fragments of the sukoh.yaml with a dynamic accordion and a  partials section
+Fragments of the `sukoh.yaml` with a dynamic accordion and a  partials section
 
 ```yaml
 ...
@@ -73,7 +74,6 @@ fragments of the sukoh.yaml with a dynamic accordion and a  partials section
 ```
 
 ```yaml
-
 ...
 partials:
   - key: component1
@@ -112,7 +112,7 @@ partials:
 
 ## Accordion with dynamic forms defined in a seperate file
 
-Fragments of the sukoh.yaml with a dynamic accordion.
+Fragments of the `sukoh.yaml` with a dynamic accordion.
 
 ```yaml
 ...
@@ -138,7 +138,7 @@ Fragments of the sukoh.yaml with a dynamic accordion.
                   value: component2
 ```
 
-The complete object file in this case _data/pageComponentsTree.yaml_
+The complete object file in this case `data/pageComponentsTree.yaml`
 
 ```yaml
 components:

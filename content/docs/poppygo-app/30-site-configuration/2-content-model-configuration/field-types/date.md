@@ -1,12 +1,14 @@
 ---
-title: Boolean
+title: Date
 ---
 
-# Boolean
+# Date
 
-The `boolean` field generates a switch. The output value is _true_ or _false_
+The `date` field generates a date field with a date picker. The output value is
+a date string.
 
-{{< figure src="../boolean.png" title="Boolean" >}}
+{{< figure src="../date1.png" title="Date field" >}}
+{{< figure src="../date2.png" title="Date picker popup" >}}
 
 ## Properties
 
@@ -24,17 +26,11 @@ The `boolean` field generates a switch. The output value is _true_ or _false_
 fields:
   key: sample_field
   title: Sample field
-  type: boolean
+  type: date
 ```
 
 ### Output
 
 ```yaml
-sample_field: true
-```
-
-
-## Sample frontmatter output
-
-```yaml
+sample_field: "2021-03-21"
 ```

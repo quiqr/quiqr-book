@@ -1,5 +1,6 @@
 ---
 title: PoppyGo Site configuration
+bookCollapseSection: true
 ---
 
 # Site configuration

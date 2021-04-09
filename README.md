@@ -1,6 +1,6 @@
 # PoppyGo Book
 
-The book is located at poppygo.github.io/poppygo-book/
+The book is located at <https://poppygo.github.io/poppygo-book/>.
 
 <center><img src="static/logo-banner.svg" width=40% /></center>
 

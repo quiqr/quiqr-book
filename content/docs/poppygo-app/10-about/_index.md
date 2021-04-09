@@ -1,5 +1,7 @@
 ---
 title: About
+aliases:
+    - /about/
 ---
 
 # About the PoppyGo Book

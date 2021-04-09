@@ -5,7 +5,7 @@ title: PoppyGo Book
 theme: book
 
 # Book configuration
-disablePathToLower: true
+disablePathToLower: false
 enableGitInfo: true
 
 # Needed for mermaid/katex shortcodes

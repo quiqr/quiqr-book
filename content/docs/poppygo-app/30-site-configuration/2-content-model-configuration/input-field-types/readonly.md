@@ -1,14 +1,13 @@
 ---
-title: Date
+title: Readonly
 ---
 
-# Date
+# Readonly
 
-The `date` field generates a date field with a date picker. The output value is
-a date string.
+The `readonly` field is shows a value but cannot be modified by the form user.
+The value can be a string or a number.
 
-{{< figure src="../date1.png" title="Date field" >}}
-{{< figure src="../date2.png" title="Date picker popup" >}}
+{{< figure src="../readonly.png" title="Readonly" >}}
 
 ## Properties
 
@@ -23,14 +22,13 @@ a date string.
 ### Configuration
 
 ```yaml
-fields:
   key: sample_field
   title: Sample field
-  type: date
+  type: readonly
 ```
 
 ### Output
 
 ```yaml
-sample_field: "2021-03-21"
+sample_field: some value
 ```

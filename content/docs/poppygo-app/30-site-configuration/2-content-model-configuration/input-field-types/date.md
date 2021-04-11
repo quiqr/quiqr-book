@@ -1,13 +1,14 @@
 ---
-title: Chips
+title: Date
 ---
 
-# Chips
+# Date
 
-The `chips` field generates a field that helps creating tags of keywords from
-entered strings instantly. The output value is an array with strings.
+The `date` field generates a date field with a date picker. The output value is
+a date string.
 
-{{< figure src="../chips.png" title="Chips" >}}
+{{< figure src="../date1.png" title="Date field" >}}
+{{< figure src="../date2.png" title="Date picker popup" >}}
 
 ## Properties
 
@@ -22,16 +23,13 @@ entered strings instantly. The output value is an array with strings.
 ### Configuration
 
 ```yaml
-fields:
   key: sample_field
   title: Sample field
-  type: chips
+  type: date
 ```
 
 ### Output
 
 ```yaml
-sample_field:
-  - tag 1
-  - tag 2
+sample_field: "2021-03-21"
 ```

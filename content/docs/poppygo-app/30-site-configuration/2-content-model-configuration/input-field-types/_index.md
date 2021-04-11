@@ -1,5 +1,5 @@
 ---
-title: Field Types
+title: Input Field Types
 weight: 10
 ---
 

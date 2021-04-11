@@ -5,7 +5,9 @@ title: Accordion
 # Accordion
 
 The `accordion` field is a container field. It can define multiple input
-fields, which are displayed as subform.
+fields, which are displayed as subform. The output is an array of dictionaries.
+
+{{< figure src="../accordion.png" title="Accordion" >}}
 
 ## Properties
 
@@ -23,26 +25,24 @@ fields, which are displayed as subform.
 
 Below an example of a regular accordion configuration without dynamic forms.
 
-{{< figure src="../accordion.png" title="Accordion" >}}
-
 ```yaml
-key: my-accordion
-title: "accordion"
-type: "accordion"
-fields:
-  - key: title
-    title: Title
-    type: string
-    arrayTitle: true
-  - key: boolean1
-    title: boolean1
-    type: boolean
-  - key: boolean2
-    title: boolean2
-    type: boolean
-  - key: boolean3
-    title: boolean3
-    type: boolean
+  key: my-accordion
+  title: "accordion"
+  type: "accordion"
+  fields:
+    - key: title
+      title: Title
+      type: string
+      arrayTitle: true
+    - key: boolean1
+      title: boolean1
+      type: boolean
+    - key: boolean2
+      title: boolean2
+      type: boolean
+    - key: boolean3
+      title: boolean3
+      type: boolean
 ```
 
 ## Accordion with dynamic forms defined in sukoh.yaml

@@ -48,7 +48,7 @@ markdown formatting)[https://www.markdownguide.org/tools/hugo/].
 #### Placeholders
 
 Placeholders indicate where the user should substitute the appropriate
-information. They should use angle brackets (`<` and `>`) and contain only
+information. They should use square brackets (`[` and `]`) and contain only
 lower-case text, with words separated by underscores. For example:
 
 ```
@@ -75,42 +75,43 @@ and not:
 [Visit this site.](https://example.org)
 ```
 
-<!--
 #### Internal links
 
-Links to other sections of the Handbook must be relative. For example:
+Links to other sections of the Handbook use the Hugo [`ref` shortcode](https://gohugo.io/content-management/shortcodes/#ref-and-relref).
+
+For example:
 
 ```
-[example](./example.md#heading-text)
+[example]({{< ref "document#anchor" >}})
+
 ```
 
 and not:
 
 ```
-[example](example.md#heading-text)
+[example](./example.md#heading-text)
 ```
 
 When referring literally to a Handbook section, the section title should be
 placed in double-quotes. Otherwise, double-quotes are not required. For example:
 
 ```
-For more information, please read the "[Power Management](./power-management.md)" section.
+For more information, please read the "[Site workspace configuration]({{< ref "../1-workspace-conf/" >}})" section.
 ```
 
 and
 
 ```
-PoppyGo provides facilities to assist with [power management](./power-management.md).
+PoppyGo automatically creates a [Site workspace configuration]({{< ref "../1-workspace-conf/" >}}).
 ```
 
--->
 
 #### Auto Links
 
 Auto links (links with the same title as URL) should use the following notation:
 
 ```
-<https://www.example.com/>
+this is an autolink https://www.example.com/ and you should not do anything else.
 ```
 
 They should not be formatted like this:
@@ -119,34 +120,31 @@ They should not be formatted like this:
 [https://www.example.com/](https://www.example.com/)
 ```
 
-<!--
 #### Redirects
 
 When changing a section name, or moving a section to a different part of the
-Handbook, a redirect must be added to the `[output.html.redirect]` section in
-`book.toml`, e.g.
+Handbook, a [Hugo `alias`](https://gohugo.io/content-management/urls/#aliases)
+must be added to the `frontmatter` section in the moved document., e.g.
 
 ```
-"/example.html" = "/new-location/example.html"
+---
+title: page with new name
+aliases:
+  - "/docs/page-with-old-name/"
+---
 ```
--->
 
-<!--
 ### Case
 
 Proper nouns outside of code blocks should use the casing of official
-information sources: e.g. 'runit' not 'Runit', 'DKMS' not 'dkms', 'GRUB' not
-'Grub' or 'grub', etc. In general, abbreviations should be upper-cased: 'CPU'
+information sources: e.g. 'Hugo' not 'hugo', 'GDPR' not 'gdpr', 'twitter' not
+'Twitter', etc. In general, abbreviations should be upper-cased: 'CPU'
 for central processing unit, 'SSD' for solid state drive, 'UI' for user
 interface, etc.
 
 Handbook filenames and directories should use [kebab
 case](https://en.wikipedia.org/wiki/Kebab_case) when splitting words. For
-example the filename should be `post-install.md` not `postinstall.md`. Words
-that are part of trademarks or well-known package names are exempt from this
-rule: for example, `PulseAudio` and `NetworkManager` are well-known by their
-[camel-case](https://en.wikipedia.org/wiki/Camel_case) names.
--->
+example the filename should be `post-install.md` not `postinstall.md`.
 
 ### Voice
 

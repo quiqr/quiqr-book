@@ -1,6 +1,7 @@
 ---
 title: Content Model Configuration
 weight: 20
+bookCollapseSection: true
 ---
 
 # Content Model Confiration

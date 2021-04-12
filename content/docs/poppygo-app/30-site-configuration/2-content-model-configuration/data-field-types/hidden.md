@@ -11,7 +11,7 @@ The `hidden` field is hidden for the user but outputs a default value.
 | property | value type | optional  | description                                  |
 |----------|------------|-----------|----------------------------------------------|
 | key      | string     | mandatory | Keys are for internal use and must be unique |
-| default  | string     | mandatory | default output value                         |
+| default  | string     | mandatory | default value when the key is not set yet    |
 
 
 ## Sample

@@ -14,18 +14,18 @@ to the pull field. The values are stored as dictionary below the pull key.
 
 ### Bundle manager Properties
 
-| property | value type            | optional   | description                                   |
-|----------|-----------------------|------------|-----------------------------------------------|
-| key      | string                | mandatory  | Keys are for internal use and must be unique. |
-| fields   | array of dictionaries | mandatory  | These are the subform input fields.           |
-| group    | string                | mandatory) | key to store the dictionary in                |
+| property | value type            | optional                 | description                                                                               |
+|----------|-----------------------|--------------------------|-------------------------------------------------------------------------------------------|
+| key      | string                | mandatory                | Keys are for internal use and must be unique.                                             |
+| fields   | array of dictionaries | mandatory                | These are the subform input fields.                                                       |
+| group    | string                | optional (default: null) | key to store the dictionary in. When not set, the key of the pull element itself is used. |
 
 ## Sample
 
 ### Configuration
 
 ```yaml
-  key: params1
+  key: some_field
   type: pull
   group: params
   fields:

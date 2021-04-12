@@ -13,23 +13,20 @@ it's resources.
 It's not possible to use Bundle managers with pages which are not stored as
 page bundle.
 
-The `bundle-image-thumbnail` field is a special field to be used together with
-bundle-manager containers. It's creates preview image thumbnails.
 
 {{< figure src="../bundle-manager1.png" title="Bundle Manager together with a Bundle Image Thumbnail" >}}
 
 {{< figure src="../bundle-manager2.png" title="Bundle Manager with Bundle Image Thumbnail and extra string fields" >}}
 
+## Bundle image thumbnail
+
+The `bundle-image-thumbnail` field is a special field to be used together with
+bundle-manager containers. It's creates preview image thumbnails of selected
+images.
+
+Read [bundle-image-thumbnail documentation]({{< ref path="../layout-field-types/bundle-image-thumbnail.md" >}}) for more information.
+
 ## Properties
-
-### Bundle manager Properties
-
-| property | value type | optional  | description                                  |
-|----------|------------|-----------|----------------------------------------------|
-| key      | string     | mandatory | Keys are for internal use and must be unique |
-| title    | string     | mandatory | The title of the element                     |
-
-### Bundle manager thumbnail Properties
 
 | property | value type | optional  | description                                  |
 |----------|------------|-----------|----------------------------------------------|
@@ -53,7 +50,6 @@ bundle-manager containers. It's creates preview image thumbnails.
     - svg
   fields:
     - key: thumb
-      title: Thumb
       type: bundle-image-thumbnail
 ```
 

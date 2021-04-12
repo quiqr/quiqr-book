@@ -7,9 +7,9 @@ title: Markdown
 The `string` field generates a field for entering strings. Multiline string
 values are allowed by enableing this property.
 
-{{< figure src="../markdown1.png" title="Single markdown" >}}
+{{< figure src="../markdown1.png" caption="Single markdown" >}}
 
-{{< figure src="../markdown2.png" title="Multi line markdown" >}}
+{{< figure src="../markdown2.png" caption="Multi line markdown" >}}
 
 ## Properties
 

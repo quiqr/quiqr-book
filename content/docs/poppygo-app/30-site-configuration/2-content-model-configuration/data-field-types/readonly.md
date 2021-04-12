@@ -7,7 +7,7 @@ title: Readonly
 The `readonly` field is shows a value but cannot be modified by the form user.
 The value can be a string or a number.
 
-{{< figure src="../readonly.png" title="Readonly" >}}
+{{< figure src="../readonly.png" caption="Readonly" >}}
 
 ## Properties
 
@@ -15,7 +15,7 @@ The value can be a string or a number.
 |----------|------------|-------------------------|----------------------------------------------------------------------------------------|
 | key      | string     | mandatory               | Keys are for internal use and must be unique                                           |
 | title    | string     | mandatory               | The title of the element                                                               |
-| tip      | string     | optional (default null) | Text entered here with markdown formatting is displayed as context help in an overlay box |
+| tip      | string     | optional (default: null) | Text entered here with markdown formatting is displayed as context help in an overlay box |
 
 
 ## Sample

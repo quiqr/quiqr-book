@@ -7,7 +7,7 @@ title: Accordion
 The `accordion` field is a container field. It can define multiple input
 fields, which are displayed as subform. The output is an array of dictionaries.
 
-{{< figure src="../accordion.png" title="Accordion" >}}
+{{< figure src="../accordion.png" caption="Accordion" >}}
 
 ## Properties
 

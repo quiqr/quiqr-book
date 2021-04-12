@@ -8,9 +8,11 @@ The `select` field generates a dropdown selectbox for selecting strings or
 numbers. The output is a number or string. If multiple is set true the out is
 an array of numbers or strings.
 
-{{< figure src="../select1.png" title="Select field" >}}
-{{< figure src="../select2.png" title="Select multiple field" >}}
-{{< figure src="../select3.png" title="Select dropdown with options" >}}
+{{< figure src="../select1.png" caption="Select field" >}}
+
+{{< figure src="../select2.png" caption="Select multiple field" >}}
+
+{{< figure src="../select3.png" caption="Select dropdown with options" >}}
 
 ## Properties
 

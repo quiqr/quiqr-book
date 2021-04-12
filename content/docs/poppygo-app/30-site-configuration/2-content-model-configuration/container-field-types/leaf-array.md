@@ -7,7 +7,7 @@ title: Leaf array
 The `lead array` field is a container field for a single child field. The
 output is a collection of values of the child field value type.
 
-{{< figure src="../leaf-array.png" title="Leaf array with dates" >}}f-arere
+{{< figure src="../leaf-array.png" caption="Leaf array with dates" >}}
 
 ## Properties
 

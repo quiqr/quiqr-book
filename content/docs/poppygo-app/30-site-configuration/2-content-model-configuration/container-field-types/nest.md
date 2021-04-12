@@ -10,9 +10,9 @@ which are displayed as a subform. You have to focus the nest-field the show the
 sub form. The output is a dictionary with values from
 the sub form fields.
 
-{{< figure src="../nest1.png" title="nest unfocussed" >}}
+{{< figure src="../nest1.png" caption="nest unfocussed" >}}
 
-{{< figure src="../nest2.png" title="nest focussed" >}}
+{{< figure src="../nest2.png" caption="nest focussed" >}}
 
 ## Properties
 

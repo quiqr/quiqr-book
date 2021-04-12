@@ -8,7 +8,7 @@ The `section` field is a container field. It can define multiple input fields,
 which are displayed as a sub form. The output is a dictionary with values from
 the sub form fields.
 
-{{< figure src="../section.png" title="section" >}}
+{{< figure src="../section.png" caption="section" >}}
 
 ## Properties
 
@@ -19,7 +19,7 @@ the sub form fields.
 | key       | string                | mandatory               | Keys are for internal use and must be unique.                                                                                                                         |
 | title     | string                | mandatory               | The title of the element.                                                                                                                                             |
 | fields    | array of dictionaries | mandatory               | These are the subform input fields.                                                                                                                                   |
-| groupdata | boolean               | optional (default true) | When set true to child field value are stored in a hash below the section key. When set false the values are placed at the same level as the section neighbour fields |
+| groupdata | boolean               | optional (default: true) | When set true to child field value are stored in a hash below the section key. When set false the values are placed at the same level as the section neighbour fields |
 
 ## Sample
 

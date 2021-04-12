@@ -7,7 +7,7 @@ title: Chips
 The `chips` field generates a field that helps creating tags of keywords from
 entered strings instantly. The output value is an array with strings.
 
-{{< figure src="../chips.png" title="Chips" >}}
+{{< figure src="../chips.png" caption="Chips" >}}
 
 ## Properties
 

@@ -14,9 +14,9 @@ It's not possible to use Bundle managers with pages which are not stored as
 page bundle.
 
 
-{{< figure src="../bundle-manager1.png" title="Bundle Manager together with a Bundle Image Thumbnail" >}}
+{{< figure src="../bundle-manager1.png" caption="Bundle Manager together with a Bundle Image Thumbnail" >}}
 
-{{< figure src="../bundle-manager2.png" title="Bundle Manager with Bundle Image Thumbnail and extra string fields" >}}
+{{< figure src="../bundle-manager2.png" caption="Bundle Manager with Bundle Image Thumbnail and extra string fields" >}}
 
 ## Bundle image thumbnail
 

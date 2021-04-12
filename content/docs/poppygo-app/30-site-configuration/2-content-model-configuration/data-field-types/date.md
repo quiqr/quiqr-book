@@ -7,8 +7,9 @@ title: Date
 The `date` field generates a date field with a date picker. The output value is
 a date string.
 
-{{< figure src="../date1.png" title="Date field" >}}
-{{< figure src="../date2.png" title="Date picker popup" >}}
+{{< figure src="../date1.png" caption="Date field" >}}
+
+{{< figure src="../date2.png" caption="Date picker popup" >}}
 
 ## Properties
 

@@ -19,13 +19,13 @@ least `poppygo/forms/default.yml`
 | subject                              | string         | mandatory                 | value is used as subject for the email                                                                                      |
 | to                                   | string         | mandatory                 | e-mail address which will receive the form                                                                                  |
 | redirect_to                          | string         | mandatory                 | relative link to redirect after the form as been sent                                                                       |
-| antispam                             | string (slide) | optional                  | Currently the antispam method is `slide`. Before sending the form the user must prove to be human be pulling a slider       |
+| antispam                             | string (slide) | optional (default: null)  | Currently the antispam method is `slide`. Before sending the form the user must prove to be human be pulling a slider       |
 | timezone                             | string         | optional (default: null)  | Time zone to use for time logging. e.g. America/Havana                                                                      |
 | senders_email_field                  | string         | optional (default: null)  | Pointer to the form field containing the visiters email address                                                             |
 | reply_to_sender                      | boolean        | optional (default: false) | If senders_email_field is set and reply_to_sender is set true, the `Reply-To` header is set to value of senders_email_field |
 | origin_allow                         | string         | optional (default: null)  | When set to a domain only email are sent when the referer is the same as this value                                         |
 | validations                          | array          | optional (default: null)  | array with validation configurations. See Validation properties                                                             |
-| validations.fields.[form_field_name] | dictionary     | optional                  | the dictionary depends on the field type                                                                                    |
+| validations.fields.[form_field_name] | dictionary     | optional (default: null)  | the dictionary depends on the field type                                                                                    |
 
 ### Validation field properties
 

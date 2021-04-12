@@ -25,7 +25,13 @@ The `info` field is shows a readonly information box. It generates no output.
   key: sample_field
   type: info
   content: |-
-    # Info
-    This is a readonly info field. You can use
-    markdown for formatting
+    ## I love \n\n![](https://poppygo.io/images/logo-nav.svg)
+
+    * it's smart
+    * it's fast
+    * it has PoppyGo One"
 ```
+
+### Output
+
+{{< figure src="../info_output.png" caption="Info field" >}}

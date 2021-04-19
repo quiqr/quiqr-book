@@ -15,7 +15,7 @@ Parts of CONTRIBUTING.md are copied from
 [Void Docs](https://github.com/void-linux/void-docs) originally written by the Void Linux
 team.
 
-## Licence
+## Copyright
 
 The PoppyGo name and logo's are trademarks of PoppyGo B.V.
 

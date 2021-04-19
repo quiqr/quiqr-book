@@ -18,7 +18,7 @@ path="../container-field-types/bundle-manager.md" >}}) for more information.
 
 ### Configuration
 
-```yaml
+{{< code-toggle file="sukoh" >}}
 key: thumb
 type: bundle-image-thumbnail
-```
+{{< /code-toggle >}}

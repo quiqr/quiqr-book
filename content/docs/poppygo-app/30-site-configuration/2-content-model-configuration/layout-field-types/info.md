@@ -32,17 +32,17 @@ The `info` field is shows a readonly information box. It generates no output.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  type: info
-  size: smalkkkkl
-  content: |-
-    ## I love \n\n![](https://poppygo.io/images/logo-nav.svg)
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+type: info
+size: smalkkkkl
+content: |-
+  ## I love \n\n![](https://poppygo.io/images/logo-nav.svg)
 
-    * it's smart
-    * it's fast
-    * it has PoppyGo One"
-```
+  * it's smart
+  * it's fast
+  * it has PoppyGo One"
+{{< /code-toggle >}}
 
 ### Output
 

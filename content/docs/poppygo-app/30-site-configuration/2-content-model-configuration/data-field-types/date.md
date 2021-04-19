@@ -25,12 +25,12 @@ a date string.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: date
-  default: "2021-04-12"
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: date
+default: "2021-04-12"
+{{< /code-toggle >}}
 
 ### Output
 

@@ -25,56 +25,52 @@ fields, which are displayed as subform. The output is an array of dictionaries.
 
 Below an example of a regular accordion configuration without dynamic forms.
 
-```yaml
-  key: my-accordion
-  title: "accordion"
-  type: "accordion"
-  fields:
-    - key: title
-      title: Title
-      type: string
-      arrayTitle: true
-    - key: boolean1
-      title: boolean1
-      type: boolean
-    - key: boolean2
-      title: boolean2
-      type: boolean
-    - key: boolean3
-      title: boolean3
-      type: boolean
-```
+{{< code-toggle file="sukoh" >}}
+key: my-accordion
+title: "accordion"
+type: "accordion"
+fields:
+  - key: title
+    title: Title
+    type: string
+    arrayTitle: true
+  - key: boolean1
+    title: boolean1
+    type: boolean
+  - key: boolean2
+    title: boolean2
+    type: boolean
+  - key: boolean3
+    title: boolean3
+    type: boolean
+{{< /code-toggle >}}
 
 ## Accordion with dynamic forms defined in sukoh.yaml
 
 Fragments of the `sukoh.yaml` with a dynamic accordion and a  partials section
 
-```yaml
-...
-        key: page_sections
-        title: Page sections
-        type: accordion
-        dynFormSearchKey: component_type
-        fields:
-          - key: title
-            title: Title
-            type: string
-            arrayTitle: true
-          - key: component_type
-            title: Component Type
-              type: select
-              multiple: false
-              options:
-                - text: Component 1
-                value: component1
-              - text: Component 2
-                value: component2
-...
+{{< code-toggle file="sukoh" >}}
+key: page_sections
+title: Page sections
+type: accordion
+dynFormSearchKey: component_type
+fields:
+  - key: title
+    title: Title
+    type: string
+    arrayTitle: true
+  - key: component_type
+    title: Component Type
+    type: select
+    multiple: false
+    options:
+      - text: Component 1
+        value: component1
+      - text: Component 2
+        value: component2
+{{< /code-toggle >}}
 
-```
-
-```yaml
-...
+{{< code-toggle file="sukoh" >}}
 partials:
   - key: component1
     component_type: poppy-banner
@@ -108,39 +104,38 @@ partials:
       - key: text3
         title: Text 3
         type: string
-```
+{{< /code-toggle >}}
 
 ## Accordion with dynamic forms defined in a seperate file
 
 Fragments of the `sukoh.yaml` with a dynamic accordion.
 
-```yaml
-...
-        key: page_sections
-        title: Page sections
-        type: accordion
-        dynFormSearchKey: component_type
-        dynFormObjectFile: data/pageComponentsTree
-        dynFormObjectRoot: components
-        fields:
-          - key: title
-            title: Title
-            type: string
-            arrayTitle: true
-          - key: component_type
-            title: Component Type
-              type: select
-              multiple: false
-              options:
-                - text: Component 1
-                  value: component1
-                - text: Component 2
-                  value: component2
-```
+{{< code-toggle file="sukoh" >}}
+key: page_sections
+title: Page sections
+type: accordion
+dynFormSearchKey: component_type
+dynFormObjectFile: data/pageComponentsTree
+dynFormObjectRoot: components
+fields:
+  - key: title
+    title: Title
+    type: string
+    arrayTitle: true
+  - key: component_type
+    title: Component Type
+    type: select
+    multiple: false
+    options:
+      - text: Component 1
+        value: component1
+      - text: Component 2
+        value: component2
+{{< /code-toggle >}}
 
 The complete object file in this case `data/pageComponentsTree.yaml`
 
-```yaml
+{{< code-toggle file="sukoh" >}}
 components:
   - key: component1
     component_type: poppy-banner
@@ -174,4 +169,4 @@ components:
       - key: text3
         title: Text 3
         type: string
-```
+{{< /code-toggle >}}

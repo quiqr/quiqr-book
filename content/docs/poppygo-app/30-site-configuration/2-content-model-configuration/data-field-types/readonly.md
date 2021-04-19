@@ -22,11 +22,11 @@ The value can be a string or a number.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: readonly
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: readonly
+{{< /code-toggle >}}
 
 ### Output
 

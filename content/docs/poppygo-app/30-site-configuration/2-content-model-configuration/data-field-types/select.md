@@ -32,20 +32,20 @@ an array of numbers or strings.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: select
-  multiple: false
-  default: 2
-  options:
-    - text: Option 1
-      value: 1
-    - text: Option 2
-      value: 2
-    - text: Option 3
-      value: 3
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: select
+multiple: false
+default: 2
+options:
+  - text: Option 1
+    value: 1
+  - text: Option 2
+    value: 2
+  - text: Option 3
+    value: 3
+{{< /code-toggle >}}
 
 ### Output
 

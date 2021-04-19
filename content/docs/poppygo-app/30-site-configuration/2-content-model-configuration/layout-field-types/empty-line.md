@@ -20,8 +20,8 @@ The `empty-line` field is renders 1 or more empty lines in the form. It generate
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  type: empty-line
-  amount: 2
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+type: empty-line
+amount: 2
+{{< /code-toggle >}}

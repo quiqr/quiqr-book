@@ -23,15 +23,15 @@ output is a collection of values of the child field value type.
 
 ### Configuration
 
-```yaml
-  key: some_parent_field
-  title: Some parent field
-  type: leaf-array
-  field:
-    key: some_child_field
-    title: Some chield field
-    type: date
-```
+{{< code-toggle file="sukoh" >}}
+key: some_parent_field
+title: Some parent field
+type: leaf-array
+field:
+  key: some_child_field
+  title: Some chield field
+  type: date
+{{< /code-toggle >}}
 
 ### Output
 

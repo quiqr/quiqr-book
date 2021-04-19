@@ -18,11 +18,11 @@ The `hidden` field is hidden for the user but outputs a default value.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  default: some value
-  type: hidden
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+default: some value
+type: hidden
+{{< /code-toggle >}}
 
 ### Output
 

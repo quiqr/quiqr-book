@@ -17,25 +17,18 @@ The `boolean` field generates a switch. The output value is _true_ or _false_
 | tip      | string     | optional (default: null) | Text entered here with markdown formatting is displayed as context help in an overlay box |
 | default  | string     | optional (default: null) | default value when the key is not set yet                                                 |
 
-
 ## Sample
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: boolean
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: boolean
+{{< /code-toggle >}}
 
 ### Output
 
 ```yaml
 sample_field: true
-```
-
-
-## Sample frontmatter output
-
-```yaml
 ```

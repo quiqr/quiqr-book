@@ -24,11 +24,11 @@ to the pull field. The values are stored as dictionary below the pull key.
 
 ### Configuration
 
-```yaml
-  key: some_field
-  type: pull
-  group: params
-  fields:
+{{< code-toggle file="sukoh" >}}
+key: some_field
+type: pull
+group: params
+fields:
   - key: author
     title: Author
     type: string
@@ -36,7 +36,7 @@ to the pull field. The values are stored as dictionary below the pull key.
     title: Description
     type: string
     multiLine: true
-```
+{{< /code-toggle >}}
 
 ### Output
 

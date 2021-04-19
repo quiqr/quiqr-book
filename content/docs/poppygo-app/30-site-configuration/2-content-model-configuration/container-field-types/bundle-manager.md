@@ -37,20 +37,21 @@ Read [bundle-image-thumbnail documentation]({{< ref path="../layout-field-types/
 
 ### Configuration
 
-```yaml
-  key: images
-  title: Images
-  type: bundle-manager
-  path: images
-  extensions:
-    - jpg
-    - png
-    - jpeg
-    - pdf
-    - svg
-  fields:
-    - key: thumb
-      type: bundle-image-thumbnail
+{{< code-toggle file="sukoh" >}}
+key: images
+title: Images
+type: bundle-manager
+path: images
+extensions:
+  - jpg
+  - png
+  - jpeg
+  - pdf
+  - svg
+fields:
+  - key: thumb
+    type: bundle-image-thumbnail
+{{< /code-toggle >}}
 ```
 
 ### Output

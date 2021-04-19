@@ -23,14 +23,14 @@ entered strings instantly. The output value is an array with strings.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: chips
-  default:
-    - one
-    - two
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: chips
+default:
+  - one
+  - two
+{{< /code-toggle >}}
 
 ### Output
 

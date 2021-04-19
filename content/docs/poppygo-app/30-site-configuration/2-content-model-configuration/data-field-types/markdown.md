@@ -26,12 +26,12 @@ values are allowed by enableing this property.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: string
-  multiLine: true
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: string
+multiLine: true
+{{< /code-toggle >}}
 
 ### Output
 

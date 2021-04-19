@@ -29,16 +29,16 @@ the sub form fields.
 
 ### Configuration
 
-```yaml
-  key: some_parent_field
-  title: Some parent field
-  type: nest
-  groupdata: true
-  fields:
+{{< code-toggle file="sukoh" >}}
+key: some_parent_field
+title: Some parent field
+type: nest
+groupdata: true
+fields:
   - key: some_child_field
     title: Some chield field
     type: date
-```
+{{< /code-toggle >}}
 
 ### Output
 

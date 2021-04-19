@@ -23,11 +23,11 @@ floating numbers are allowed. It's not possible to enter othert characters.
 
 ### Configuration
 
-```yaml
-  key: sample_field
-  title: Sample field
-  type: number
-```
+{{< code-toggle file="sukoh" >}}
+key: sample_field
+title: Sample field
+type: number
+{{< /code-toggle >}}
 
 ### Output
 

@@ -20,6 +20,7 @@ Below is a minimal form html to use in your Hugo Layout. You need to put
   Email: <input type="text" name="email" /><br/>
   <textarea name="message" placeholder="Message"></textarea><br/>
   <input type="submit" value="send" />
+  <input type="hidden" name="POGOFORM_ID" value="default">
 </form>
 ```
 

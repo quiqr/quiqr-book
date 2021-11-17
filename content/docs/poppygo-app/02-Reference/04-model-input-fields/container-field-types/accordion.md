@@ -71,7 +71,7 @@ fields:
 {{< /code-toggle >}}
 
 {{< code-toggle file="sukoh" >}}
-partials:
+dynamics:
   - key: component1
     component_type: poppy-banner
     fields:

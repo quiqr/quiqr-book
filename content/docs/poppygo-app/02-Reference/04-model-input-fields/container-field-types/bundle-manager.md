@@ -24,7 +24,7 @@ The `bundle-image-thumbnail` field is a special field to be used together with
 bundle-manager containers. It's creates preview image thumbnails of selected
 images.
 
-Read [bundle-image-thumbnail documentation]({{< ref path="../layout-field-types/bundle-image-thumbnail.md" >}}) for more information.
+```Read [bundle-image-thumbnail documentation]({{< ref path="../layout-field-types/bundle-image-thumbnail.md" >}}) for more information.```
 
 ## Properties
 

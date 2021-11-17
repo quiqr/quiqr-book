@@ -1,5 +1,6 @@
 ---
-title: About
+title: About this book
+weight: 30
 aliases:
     - /about/
 ---
@@ -16,6 +17,8 @@ glass' icon, or press 's'.
 Those looking for tips and tricks on how to develop Hugo websites should
 consult the official [Hugo Documentation](https://gohugo.io/documentation/) or
 the [Hugo Forum](https://discourse.gohugo.io/).
+
+The latest version of this book is located at https://poppygo.github.io/poppygo-book/.
 
 ## Example Commands
 

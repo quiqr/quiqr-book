@@ -1,19 +1,19 @@
 ---
 title: Content Model Configuration
 weight: 20
-bookCollapseSection: true
+oxbookCollapseSection: true
 ---
 
 # Content Model Confiration
 
-For content managing PoppyGo App can create advanced forms to edit content. These
-forms are configured in the _sukoh.json file_. The sukoh-file can be in YAML,
-JSON or TOML-formatting. For sake of readability we use YAML for inline example
-snippets in this reference.
+PoppyGo can create advanced advanced models with customized forms for editing
+any kind of content. These forms are configured in the ```./poppygo/model/``` directory
+with ```base.json``` as the main configuration file. The model-files can be in
+YAML, JSON or TOML-formatting.
 
-## Sukoh file structure.
+## The file structure
 
-The sukoh file is split up in several main properties:
+The model file is split up in several main properties:
 
 - **build**: information how to serve the hugo website
 - **serve**: information how to build the hugo website
@@ -21,133 +21,7 @@ The sukoh file is split up in several main properties:
 - **collections**: main key for collections with pages. E.g. _blog posts_
 - **singles**: main key for single page configurations. E.g. _home page_ or _about_
 - **menu**: main key for the menu configuration of the CMS.
-- **partials**: main key for the partial form definitions to be used in dynamic forms.
-
-Here's an example sukoh.yaml file containing a minimal configuration for a blog website.
-
-```yaml
-build:
-  - config: config.toml
-    key: default
-serve:
-  - config: config.toml
-    key: default
-hugover: extended_0.76.5
-collections:
-  - dataformat: yaml
-    extension: md
-    fields:
-      - key: draft
-        title: Draft
-        type: boolean
-      - key: title
-        title: Title
-        type: string
-      - extensions:
-          - jpg
-          - png
-          - jpeg
-          - pdf
-          - svg
-        fields:
-          - key: thumb
-            title: Thumb
-            type: bundle-image-thumbnail
-        key: page_related_images
-        path: ''
-        title: Page related images
-        type: bundle-manager
-      - key: mainContent
-        title: Main content
-        type: markdown
-      - key: publishdate
-        title: Publishdate
-        type: hidden
-      - key: tags
-        title: Tags
-        type: chips
-    folder: content/post/
-    itemtitle: Post
-    key: c__post
-    title: Posts
-menu:
-  - key: singles
-    menuItems:
-      - key: s__about
-    title: Pages
-  - key: collections
-    menuItems:
-      - key: c__post
-    title: Groups
-  - key: general
-    menuItems:
-      - key: config
-    title: General
-singles:
-  - dataformat: toml
-    fields:
-      - key: description
-        title: Description
-        type: string
-      - key: title
-        title: Title
-        type: string
-      - fields:
-          - key: author
-            title: Author
-            type: string
-          - key: dateFormat
-            title: Date format
-            type: string
-          - key: description
-            title: Description
-            type: string
-          - key: paginationSinglePost
-            title: Pagination single post
-            type: boolean
-          - key: readMore
-            title: Read more
-            type: boolean
-          - key: style
-            title: Style
-            type: string
-        groupdata: true
-        key: params
-        title: Params
-        type: section
-    file: config.toml
-    key: config
-    title: Settings
-  - dataformat: yaml
-    fields:
-      - key: title
-        title: Title
-        type: string
-      - key: description
-        title: Description
-        type: string
-      - extensions:
-          - jpg
-          - png
-          - jpeg
-          - pdf
-          - svg
-        fields:
-          - key: thumb
-            title: Thumb
-            type: bundle-image-thumbnail
-        key: page_related_images
-        path: images/
-        title: Page related images
-        type: bundle-manager
-      - key: mainContent
-        title: Main content
-        type: markdown
-    file: content/about.md
-    key: s__about
-    previewUrl: /about/
-    title: About
-```
+- **dynamics**: main key for the dynamics form definitions to be used in dynamic forms.
 
 ## Single Properties
 
@@ -204,10 +78,10 @@ Below the properties of a single menu item.
 |----------|------------|-----------|------------------------------------------------------------|
 | key      | string     | mandatory | this refers to the key of the defined Single of Collection |
 
-## Form Input Components
+## Model Input Fields
 
-the main keys Singles, Collections and Partials can have fields definitions.
-These are the building blocks for creating forms.
+The main keys Singles, Collections and Dynamics can have fields definitions.
+These are the building blocks for creating forms. Read more about in [model input fields]()
 
 
 

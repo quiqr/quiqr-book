@@ -1,5 +1,5 @@
 ---
-title: Configuration properties
+title: Forms Configuration properties
 weight: 20
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: PoppyGo Site configuration
-bookCollapseSection: true
+title: Getting Started
+weight: 10
+xxbookCollapseSection: true
 ---
 
 # Site configuration

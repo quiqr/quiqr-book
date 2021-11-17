@@ -1,6 +1,6 @@
 ---
-title: Pogoform forms-to-email endpoint
-bookCollapseSection: true
+title: Pogoforms forms-to-email endpoint
+xbookCollapseSection: true
 ---
 
 # HTML Forms endpoint
@@ -23,7 +23,7 @@ configuration.
 * Pogoform human check slider
 * Server side validations
 
-Read the [Pogoform Quickstart]({{< ref "./quickstart" >}}) to get your form up
+Read the [Pogoform Quickstart]({{< ref "./forms-quickstart" >}}) to get your form up
 and running within 10 minutes.
 
 The section [pogoform configuration properties]({{< ref

@@ -5,8 +5,8 @@ title: Bundle image thumbnail
 # Bundle image thumbnail
 
 The `bundle-image-thumbnail` field renders a thumbnail image. It can only be used together
-with the `bundle-manager` field. Read [bundle-manager documentation]({{< ref
-path="../container-field-types/bundle-manager.md" >}}) for more information.
+with the `bundle-manager` field. Read ```[bundle-manager documentation]({{< ref
+path="../container-field-types/bundle-manager.md" >}})``` for more information.
 
 ## Properties
 

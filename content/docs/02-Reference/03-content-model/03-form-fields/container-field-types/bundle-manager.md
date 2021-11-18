@@ -37,7 +37,7 @@ images.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: images
 title: Images
 type: bundle-manager

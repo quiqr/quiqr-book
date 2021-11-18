@@ -23,7 +23,7 @@ floating numbers are allowed. It's not possible to enter othert characters.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 title: Sample field
 type: number

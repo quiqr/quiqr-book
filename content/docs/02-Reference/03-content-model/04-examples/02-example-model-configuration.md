@@ -5,7 +5,7 @@ weight: 20
 
 # Example 1: minimal one file blog
 
-Here's an example sukoh.yaml file containing a minimal configuration for a blog website.
+Here's an example model/base-file containing a minimal configuration for a blog website.
 
 {{< code-toggle file="./model/base" >}}
 build:

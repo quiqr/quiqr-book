@@ -32,7 +32,7 @@ The `info` field is shows a readonly information box. It generates no output.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 type: info
 size: smalkkkkl

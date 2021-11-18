@@ -25,7 +25,7 @@ the sub form fields.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: some_parent_field
 title: Some parent field
 type: section

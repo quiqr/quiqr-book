@@ -25,7 +25,7 @@ a date string.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 title: Sample field
 type: date

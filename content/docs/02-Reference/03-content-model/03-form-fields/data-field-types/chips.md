@@ -23,7 +23,7 @@ entered strings instantly. The output value is an array with strings.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 title: Sample field
 type: chips

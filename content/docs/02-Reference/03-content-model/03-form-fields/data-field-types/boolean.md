@@ -21,7 +21,7 @@ The `boolean` field generates a switch. The output value is _true_ or _false_
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 title: Sample field
 type: boolean

@@ -24,7 +24,7 @@ to the pull field. The values are stored as dictionary below the pull key.
 
 ### Configuration
 
-{{< code-toggle file="sukoh" >}}
+{{< code-toggle file="./poppygo/model/base" >}}
 key: some_field
 type: pull
 group: params

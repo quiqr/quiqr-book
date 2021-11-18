@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL: https://poppygo.github.io/poppygo-book/
-title: PoppyGo Book
+title: Documentation
 theme: book
 
 # Book configuration

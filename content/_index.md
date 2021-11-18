@@ -1,10 +1,10 @@
 ---
-title: Front page
+title: PoppyGo Documentation
 type: docs
-bookToc: false
+xbookToc: false
 ---
 
-## PoppyGo
+# PoppyGo
 
 PoppyGo is a content admin application for Hugo websites. With PoppyGo you can
 enable users to manage content of a Hugo website and let them publish a static

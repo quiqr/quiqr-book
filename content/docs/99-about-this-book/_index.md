@@ -1,8 +1,9 @@
 ---
 title: About this book
-weight: 30
+weight: 99
 aliases:
     - /about/
+bookFlatSection: true
 ---
 
 # About the PoppyGo Book

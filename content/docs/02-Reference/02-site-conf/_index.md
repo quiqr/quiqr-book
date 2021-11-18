@@ -1,7 +1,7 @@
 ---
 title: Top Level Site Config File
 weight: 10
-bookToc: false
+xbookToc: false
 ---
 
 # Site configuration File
@@ -11,8 +11,10 @@ Every PoppyGo website has a top-level configuration file. It's located in
 The site configurations tells PoppyGo where to find the site files and where to
 publish the website.
 
+{{< hint warning >}}
 The site files are maintained by PoppyGo and should not be edited manually,
 except when you know whhat you're doing.
+{{< /hint >}}
 
 | property                       | value type            | optional  | description                                                          |
 |--------------------------------|-----------------------|-----------|----------------------------------------------------------------------|

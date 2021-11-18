@@ -1,13 +1,9 @@
 ---
-title: Using Includes and Partials
+title: Includes
 weight: 10
 ---
 
-# Using Includes and Partials
-
-PoppyGo has two structures two organize complex models and prevent redundant configuration code.
-
-## Includes
+# Includes
 
 In addition to using a single ```model/base``` config file, one can use the ```poppygo/model/includes/```
 directory to maintain an easier organization.
@@ -49,17 +45,3 @@ Equals ```./poppygo/model/includes/menu.yaml```
   - key: config
   title: settings
 ```
-
-## Partials
-
-Partials are reusable configuration blocks that can be used in singles, collections and dynamics.
-
-
-
-
-
-
-
-
-
-

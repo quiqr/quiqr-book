@@ -1,6 +1,7 @@
 ---
-title: Pogoforms forms-to-email endpoint
-xbookCollapseSection: true
+title: Pogoforms
+bookCollapseSection: true
+weight: 20
 ---
 
 # HTML Forms endpoint

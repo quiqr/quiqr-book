@@ -1,5 +1,5 @@
 ---
-title: Example 1. minimal one file blog
+title: Blog (single file)
 weight: 20
 ---
 

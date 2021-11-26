@@ -2,7 +2,7 @@
 title: Markdown
 ---
 
-# String
+# Markdown
 
 The `string` field generates a field for entering strings. Multiline string
 values are allowed by enableing this property.
@@ -19,7 +19,7 @@ values are allowed by enableing this property.
 | title     | string     | mandatory                 | The title of the element                                                                  |
 | tip       | string     | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
 | default   | string     | optional (default: null)  | default value when the key is not set yet                                                 |
-| multiLine | boolean    | optional (default: false) | Enable multi line value                                                                   |
+| multiLine | boolean    | optional (default: true) | Enable multi line value                                                                   |
 | preview   | boolean    | optional (default: false) | Enable preview field with rendered HTML                                                   |
 
 ## Sample

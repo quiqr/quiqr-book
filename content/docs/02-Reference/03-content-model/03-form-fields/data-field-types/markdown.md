@@ -19,7 +19,6 @@ values are allowed by enableing this property.
 | title     | string     | mandatory                 | The title of the element                                                                  |
 | tip       | string     | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
 | default   | string     | optional (default: null)  | default value when the key is not set yet                                                 |
-| multiLine | boolean    | optional (default: true) | Enable multi line value                                                                   |
 | preview   | boolean    | optional (default: false) | Enable preview field with rendered HTML                                                   |
 
 ## Sample
@@ -29,8 +28,7 @@ values are allowed by enableing this property.
 {{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 title: Sample field
-type: string
-multiLine: true
+type: markdown
 {{< /code-toggle >}}
 
 ### Output

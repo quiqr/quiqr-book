@@ -4,7 +4,7 @@ weight: 40
 bookCollapseSection: true
 ---
 
-# Content Model Confiration
+# Content Model Configuration
 
 PoppyGo can create advanced advanced models with customized forms for editing
 any kind of content. These forms are configured in the ```./poppygo/model/``` directory

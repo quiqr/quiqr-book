@@ -35,7 +35,7 @@ The `info` field is shows a readonly information box. It generates no output.
 {{< code-toggle file="./poppygo/model/base" >}}
 key: sample_field
 type: info
-size: smalkkkkl
+size: small
 content: |-
   ## I love \n\n![](https://poppygo.io/images/logo-nav.svg)
 

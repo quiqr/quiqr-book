@@ -2,7 +2,7 @@
 title: Slider
 ---
 
-# String
+# Slider
 
 The `slider` field generates a slider for entering numbers.
 

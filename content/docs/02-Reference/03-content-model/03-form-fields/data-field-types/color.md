@@ -2,7 +2,7 @@
 title: Color
 ---
 
-# String
+# Color
 
 The `color` field generates a colorpicker for entering color hex codes.
 

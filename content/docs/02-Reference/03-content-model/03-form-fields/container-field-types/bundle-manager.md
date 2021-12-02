@@ -28,10 +28,13 @@ images.
 
 ## Properties
 
-| property | value type | optional  | description                                  |
-|----------|------------|-----------|----------------------------------------------|
-| key      | string     | mandatory | Keys are for internal use and must be unique |
-| title    | string     | mandatory | The title of the element                     |
+| property    | value type | optional  | description                                  |
+|-------------|------------|-----------|----------------------------------------------|
+| key         | string     | mandatory | Keys are for internal use and must be unique |
+| title       | string     | mandatory | The title of the element                     |
+| path        | string     | mandatory | The path to the location of the files        |
+| extensions  | array      | optional  | List of allowed filetypes                    |
+| fields      | array      | optional  | List of fields as subform                    |
 
 ## Sample
 

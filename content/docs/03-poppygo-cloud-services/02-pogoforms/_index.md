@@ -7,14 +7,14 @@ weight: 20
 # HTML Forms endpoint
 
 A static website needs an external service for sending forms to e-mail. Sites
-which are published to PoppyGo Cloud can use the `Pogoform` service for
+which are published to Quiqr Cloud can use the `Pogoform` service for
 sending e-mails. The configuration of the form-endpoint is done with a
 yaml-file. And the HTML forms only need a simple action endpoint as
 configuration.
 
 **Requirements**:
 
-* A working PoppyGo website published to the PoppyGo Cloud.
+* A working Quiqr website published to the Quiqr Cloud.
 
 **Features**:
 

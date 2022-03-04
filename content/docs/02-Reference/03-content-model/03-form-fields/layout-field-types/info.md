@@ -41,7 +41,7 @@ content: |-
 
   * it's smart
   * it's fast
-  * it has PoppyGo One"
+  * it has Quiqr One"
 {{< /code-toggle >}}
 
 ### Output

@@ -6,8 +6,8 @@ weight: 10
 # Pogoform Quickstart
 
 To quickly understand how Pogoforms works, try to implement the example form
-configuration below in your PoppyGo website. After implementing the form, you
-need to publish your website to the PoppyGo Cloud.
+configuration below in your Quiqr website. After implementing the form, you
+need to publish your website to the Quiqr Cloud.
 
 ## Example form configuration
 

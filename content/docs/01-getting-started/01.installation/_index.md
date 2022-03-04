@@ -2,21 +2,21 @@
 title: Installation
 ---
 
-# Install PoppyGo
+# Install Quiqr
 
-Download the latest version of PoppyGo for your operating system.
+Download the latest version of Quiqr for your operating system.
 
 
 ## macOS
 
-[PoppyGo for Mac](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_mac.dmg)
+[Quiqr for Mac](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_mac.dmg)
 
 ## Windows
 
-[PoppyGo for Windows](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_win.exe)
+[Quiqr for Windows](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_win.exe)
 
-After download execute the .exe-file to install PoppyGo.
+After download execute the .exe-file to install Quiqr.
 
 ## Linux
 
-[PoppyGo for Linux](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_linux_x86_64.AppImage)
+[Quiqr for Linux](https://poppygo-app-releases.s3.eu-west-1.amazonaws.com/poppygo_linux_x86_64.AppImage)

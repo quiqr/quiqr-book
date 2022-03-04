@@ -16,7 +16,7 @@ fields, which are displayed as subform. The output is an array of dictionaries.
 | key                   | string                                                   | mandatory | Keys are for internal use and must be unique                                                                                                                                                                                                                                  |
 | title                 | string                                                   | mandatory | The title of the accordion element                                                                                                                                                                                                                                            |
 | dynFormSearchKey      | string                                                   | optional (default: null)  | key of one of the child field of which the value refers to a custom partial form                                                                                                                                                                                              |
-| dynFormObjectFile     | string with relative path to file without file extension | optional (default: null)  | if dynFormSearchKey is set this path points to the file containing a subform. **Do not define the used file extension**. PoppyGo will automatically try to open json, toml or yaml files. If dynFormObjectFile is not set it refers to the partials in the ./poppygo/model/base file itself. |
+| dynFormObjectFile     | string with relative path to file without file extension | optional (default: null)  | if dynFormSearchKey is set this path points to the file containing a subform. **Do not define the used file extension**. Quiqr will automatically try to open json, toml or yaml files. If dynFormObjectFile is not set it refers to the partials in the ./poppygo/model/base file itself. |
 | dynFormObjectRoot     | string                                                   | optional (default: null) | if dynFormObjectFile is set this points to the root node where the subform is defined e.g. components                                                                                                                                                                         |
 | fields                | array of dictionaries                                    | mandatory | These are the form input fields.                                                                                                                                                                                                                                              |
 | fields.[n].arrayTitle | boolean                                                  | optional (default: false) | The value of the child field which has arrayTitle=true will be displayed as the accordion item title                                                                                                                                                                          |
@@ -76,7 +76,7 @@ dynamics:
     component_type: poppy-banner
     fields:
       - key: poppy_variant
-        title: PoppyGo Variant
+        title: Quiqr Variant
         type: select
         multiple: false
         options:
@@ -141,7 +141,7 @@ components:
     component_type: poppy-banner
     fields:
       - key: poppy_variant
-        title: PoppyGo Variant
+        title: Quiqr Variant
         type: select
         multiple: false
         options:

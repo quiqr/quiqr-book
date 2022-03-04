@@ -5,9 +5,9 @@ weight: 40
 
 # Root property: menu
 
-The Menu main key is optional. When not defined PoppyGo creates two menu sections: Singles and Collections.
+The Menu main key is optional. When not defined Quiqr creates two menu sections: Singles and Collections.
 
-When ```menu``` is defined the default PoppyGo content navigation is overriden by this configuration.
+When ```menu``` is defined the default Quiqr content navigation is overriden by this configuration.
 
 ## Properties
 

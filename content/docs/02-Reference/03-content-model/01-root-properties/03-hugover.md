@@ -5,7 +5,7 @@ weight: 30
 
 # hugover
 
-The ```hugover``` property tells PoppyGo which Hugo version it should use. If
+The ```hugover``` property tells Quiqr which Hugo version it should use. If
 the version is not available, it will automatically downloaded from the
 official Hugo site.
 

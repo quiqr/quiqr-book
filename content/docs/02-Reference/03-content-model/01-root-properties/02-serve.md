@@ -5,7 +5,7 @@ weight: 20
 
 # Serve
 
-The ```serve``` property tells PoppyGo which Hugo configuration file should be
+The ```serve``` property tells Quiqr which Hugo configuration file should be
 used for the live preview server. The server listens to
 ```http://localhost:13131```.
 

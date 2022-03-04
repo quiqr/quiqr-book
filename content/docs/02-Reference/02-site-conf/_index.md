@@ -6,13 +6,13 @@ xbookToc: false
 
 # Site configuration File
 
-Every PoppyGo website has a top-level configuration file. It's located in
+Every Quiqr website has a top-level configuration file. It's located in
 ```$HOME/Sukoh/config.websitename.json```.
-The site configurations tells PoppyGo where to find the site files and where to
+The site configurations tells Quiqr where to find the site files and where to
 publish the website.
 
 {{< hint warning >}}
-The site files are maintained by PoppyGo and should not be edited manually,
+The site files are maintained by Quiqr and should not be edited manually,
 except when you know whhat you're doing.
 {{< /hint >}}
 

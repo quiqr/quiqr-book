@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://poppygo.github.io/poppygo-book/
+baseURL: https://quiqr.github.io/quiqr-book/
 title: Documentation
 theme: book
 
@@ -28,14 +28,14 @@ languages:
 
 menu:
   after:
-    - name: "PoppyGo HQ"
-      url: "https://poppygo.io"
+    - name: "Quiqr HQ"
+      url: "https://quiqr.app"
       weight: 40
-    - name: "github/poppygo"
-      url: "https://github.com/poppygo/"
+    - name: "github/quiqr"
+      url: "https://github.com/quiqr/"
       weight: 60
-    - name: "@poppygoapp"
-      url: https://twitter.com/poppygoapp
+    - name: "@quiqrapp"
+      url: https://twitter.com/quiqrapp
       weight: 70
 
 params:
@@ -63,7 +63,7 @@ params:
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/poppygo/poppygo-book
+  BookRepo: https://github.com/quiqr/quiqr-book
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.

@@ -1,6 +1,6 @@
 # Contributing
 
-To contribute to the PoppyGo documentation, please read the following. Pull
+To contribute to the Quiqr documentation, please read the following. Pull
 requests that do not meet the criteria described below will not be merged.
 Before submitting a PR:
 
@@ -22,17 +22,17 @@ section](https://docs.voidlinux.org/about/about-this-handbook.html):
 
 > This handbook is not an extensive guide on how to use and configure hugo
 > websites The purpose of this document is to explain how to install,
-> configure, and maintain PoppyGo websites ...
+> configure, and maintain Quiqr websites ...
 
 Thus, we are unlikely to accept contributions which add information that is not
-particularly PoppyGo-specific.
+particularly Quiqr-specific.
 
 ## Style Guide
 
 This style guide outlines the standards for contributing to the Handbook. The
-manual on <https://poppygo.github.io/poppygo-book/> is generated from an
+manual on <https://quiqr.org/book/> is generated from an
 [hugo-book](https://github.com/alex-shpak/hugo-book) site stored in the
-[poppygo-book](https://github.com/poppygo/poppygo-book/) repository.
+[quiqr-book](https://github.com/quiqr/quiqr-book/) repository.
 
 ### General
 
@@ -102,7 +102,7 @@ For more information, please read the "[Site workspace configuration]({{< ref ".
 and
 
 ```
-PoppyGo automatically creates a [Site workspace configuration]({{< ref "../1-workspace-conf/" >}}).
+Quiqr automatically creates a [Site workspace configuration]({{< ref "../1-workspace-conf/" >}}).
 ```
 
 
@@ -185,13 +185,13 @@ should begin with a phrase such as "Note that ..." or "It should be noted that
 like:
 
 ```
-Note that you can also use PoppyGo utility X for this purpose.
+Note that you can also use Quiqr utility X for this purpose.
 ```
 
 and not:
 
 ```
-> You can also use PoppyGo utility X for this purpose.
+> You can also use Quiqr utility X for this purpose.
 ```
 
 ### Block quotes
@@ -202,11 +202,11 @@ source.
 ## Submitting Changes
 
 Proposed changes should be submitted as pull requests to the
-[PoppyGo Book](https://github.com/poppygo/poppygo-book) repository on
+[Quiqr Book](https://github.com/quiqr/quiqr-book) repository on
 [GitHub](https://github.com/). Please note that, unlike a wiki, submissions will
 be reviewed before they are merged. If any changes are required they will need
 to be made before the pull request is accepted. This process is in place to
-ensure the quality and standards of the PoppyGo Book are sustained.
+ensure the quality and standards of the Quiqr Book are sustained.
 
 ### Requirements
 
@@ -217,7 +217,7 @@ pull request.
 To clone the repository locally and push changes, git is required. It can be
 installed via the `git` package.
 
-Building the PoppyGo Book locally requires a recent version of [Hugo
+Building the Quiqr Book locally requires a recent version of [Hugo
 extended](https://github.com/gohugoio/hugo/releases/latest).
 
 ### Forking
@@ -229,8 +229,8 @@ Once you have an account, follow GitHub's
 Clone the repository onto your computer, enter it, and create a new branch:
 
 ```
-$ git clone https://github.com/<your_username>/poppygo-book.git
-$ cd poppygo-book
+$ git clone https://github.com/<your_username>/quiqr-book.git
+$ cd quiqr-book
 $ git checkout -b <branch_name>
 ```
 

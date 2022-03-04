@@ -1,23 +1,23 @@
 ---
-title: PoppyGo Documentation
+title: Quiqr Documentation
 type: docs
 xbookToc: false
 ---
 
-# PoppyGo
+# Quiqr
 
-PoppyGo is a content admin application for Hugo websites. With PoppyGo you can
+Quiqr is a content admin application for Hugo websites. With Quiqr you can
 enable users to manage content of a Hugo website and let them publish a static
 version to the internet. Without coding.
 
-PoppyGo admin interfaces can be customized with simple configuration files.
+Quiqr admin interfaces can be customized with simple configuration files.
 
-This documentation assists developers and managers in having the PoppyGo Admin
+This documentation assists developers and managers in having the Quiqr Admin
 completely tailored to cater the specific model of a Hugo website.
 
 ## Version
 
-This reference is up to date for PoppyGo Version 0.9
+This reference is up to date for Quiqr Version 0.9
 
-<center><img src="/poppygo-book/logo-banner.svg" width=200px /></center>
+<center><img src="/book/logo-banner.svg" width=200px /></center>
 

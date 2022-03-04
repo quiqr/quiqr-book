@@ -1,6 +1,6 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL: https://quiqr.github.io/quiqr-book/
+baseURL: https://quiqr.org/book/
 title: Documentation
 theme: book
 
@@ -34,8 +34,8 @@ menu:
     - name: "github/quiqr"
       url: "https://github.com/quiqr/"
       weight: 60
-    - name: "@quiqrapp"
-      url: https://twitter.com/quiqrapp
+    - name: "@QuiqrApp"
+      url: https://twitter.com/QuiqrApp
       weight: 70
 
 params:

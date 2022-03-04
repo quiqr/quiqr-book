@@ -1,0 +1,1 @@
+navigator.serviceWorker&&navigator.serviceWorker.register("/poppygo-book/sw.js",{scope:"/poppygo-book/"})

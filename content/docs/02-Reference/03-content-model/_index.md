@@ -7,7 +7,7 @@ bookCollapseSection: true
 # Content Model Configuration
 
 Quiqr can create advanced advanced models with customized forms for editing
-any kind of content. These forms are configured in the ```./poppygo/model/``` directory
+any kind of content. These forms are configured in the ```./quiqr/model/``` directory
 with ```base.json``` as the main configuration file. The model-files can be in
 YAML, JSON or TOML-formatting.
 

@@ -3,10 +3,10 @@ title: Forms Configuration properties
 weight: 20
 ---
 
-## Pogoform configuration properties
+## Quiqr Forms configuration properties
 
-The form configuration is located in the folder `poppygo/forms/`. You need a
-least `poppygo/forms/default.yml`
+The form configuration is located in the folder `quiqr/forms/`. You need a
+least `quiqr/forms/default.yml`
 
 ### Forms properties
 
@@ -35,7 +35,7 @@ least `poppygo/forms/default.yml`
 
 | element + attribute | value type | optional                    | description                                                                                                                                                                                                                                 |
 |---------------------|------------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<form\> action     | string     | mandatory                   | This value needs to be set to `POGOFORM` in capitals                                                                                                                                                                                        |
-| \<hidden\> name     | string     | optional (default: default) | To use an alternative Pogoform configuration you need to set this attribute to the name of the yaml-file without the extension `yml`. The yaml file needs to be located in the hugo source directory `/poppygo/forms/[pogoform_id].yml` |
+| \<form\> action     | string     | mandatory                   | This value needs to be set to `QUIQR_FORM` in capitals                                                                                                                                                                                        |
+| \<hidden\> name     | string     | optional (default: default) | To use an alternative Quiqr Forms configuration you need to set this attribute to the name of the yaml-file without the extension `yml`. The yaml file needs to be located in the hugo source directory `/quiqr/forms/[quiqr_form_id].yml` |
 
 

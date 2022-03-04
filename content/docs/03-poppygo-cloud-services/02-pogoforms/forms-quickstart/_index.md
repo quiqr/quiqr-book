@@ -1,31 +1,31 @@
 ---
-title: Pogoforms Quickstart
+title: Quiqr Forms Quickstart
 weight: 10
 ---
 
-# Pogoform Quickstart
+# Quiqr Forms Quickstart
 
-To quickly understand how Pogoforms works, try to implement the example form
+To quickly understand how Quiqr Forms works, try to implement the example form
 configuration below in your Quiqr website. After implementing the form, you
 need to publish your website to the Quiqr Cloud.
 
 ## Example form configuration
 
 Below is a minimal form html to use in your Hugo Layout. You need to put
-`POGOFORM` in the form action to use the pogoform-service.
+`QUIQR_FORM` in the form action to use the Quiqr Forms service.
 
 ```html
-<form method="post" action="POGOFORM">
+<form method="post" action="QUIQR_FORM">
   Name: <input type="text" name="name" /><br/>
   Email: <input type="text" name="email" /><br/>
   <textarea name="message" placeholder="Message"></textarea><br/>
   <input type="submit" value="send" />
-  <input type="hidden" name="POGOFORM_ID" value="default">
+  <input type="hidden" name="QUIQR_FORM_ID" value="default">
 </form>
 ```
 
 Here's a configuration belonging to above form in the file
-`poppygo/forms/default.yml`
+`quiqr/forms/default.yml`
 
 ```yaml
 ---

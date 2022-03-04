@@ -5,13 +5,13 @@ weight: 10
 
 # Includes
 
-In addition to using a single ```model/base``` config file, one can use the ```poppygo/model/includes/```
+In addition to using a single ```model/base``` config file, one can use the ```quiqr/model/includes/```
 directory to maintain an easier organization.
 
 You can split up the ```model/base-file``` and use seperate files
 for ```menu```, ```collections```, ```dynamics```, and ```singles```.
 
-Poppygo automatically reads the files in ```./poppygo/model/includes/``` and
+Quiqr automatically reads the files in ```./quiqr/model/includes/``` and
 merges these tree inside ```model/base```.
 
 Each file represents a configuration root object, such as collections.toml for
@@ -19,7 +19,7 @@ Each file represents a configuration root object, such as collections.toml for
 
 Each file’s content must be top-level, for example:
 
-The configuration in ```./poppygo/model/base.yaml```
+The configuration in ```./quiqr/model/base.yaml```
 
 ```yaml
 menu:
@@ -34,7 +34,7 @@ menu:
       - key: config
 ```
 
-Equals ```./poppygo/model/includes/menu.yaml```
+Equals ```./quiqr/model/includes/menu.yaml```
 ```yaml
 - key: pages
   menuItems:

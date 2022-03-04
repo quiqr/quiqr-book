@@ -25,7 +25,7 @@ values are allowed by enableing this property.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
 type: string

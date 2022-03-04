@@ -18,7 +18,7 @@ The `hidden` field is hidden for the user but outputs a default value.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 default: some value
 type: hidden

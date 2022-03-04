@@ -20,7 +20,7 @@ The `easymde` field generates a lightweight markdown editor for entering markdow
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
 type: easymde

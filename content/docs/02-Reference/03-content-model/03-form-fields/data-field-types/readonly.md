@@ -22,7 +22,7 @@ The value can be a string or a number.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
 type: readonly

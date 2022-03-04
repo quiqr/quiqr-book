@@ -1,24 +1,24 @@
 ---
-title: PogoSite Hosting
+title: Quiqr Cloud Hosting
 weight: 10
 ---
 
-# PogoSite Hosting
+# Quiqr Cloud Hosting
 
 ## Plans
 
-### Free pogosite.com website
+### Free quiqr.cloud website
 
-From with the Poppygo App a pogosite.com subdomain can be claimed. After a
-pogosite.com-subdomain has been claimed one can publish instantly to this
+From with the Quiqr App a quiqr.cloud subdomain can be claimed. After a
+quiqr.cloud-subdomain has been claimed one can publish instantly to this
 space.
 
 ### Quiqr Basic Plan
 
-A free pogosite-subdomain can be upgraded to the basic plan. With the basic
+A free Quiqr Cloud subdomain can be upgraded to the basic plan. With the basic
 plan a site can be connected to a custom domain.
 
-## PogoSite configuration
+## Quiqr Cloud configuration
 
-- pogoform
+- forms
 - redirects

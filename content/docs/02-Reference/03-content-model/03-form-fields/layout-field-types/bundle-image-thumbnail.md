@@ -18,7 +18,7 @@ path="../container-field-types/bundle-manager.md" >}})``` for more information.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: thumb
 type: bundle-image-thumbnail
 {{< /code-toggle >}}

@@ -24,7 +24,7 @@ The `slider` field generates a slider for entering numbers.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
 type: slider

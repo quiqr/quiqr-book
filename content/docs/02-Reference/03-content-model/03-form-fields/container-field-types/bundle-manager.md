@@ -40,7 +40,7 @@ images.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: images
 title: Images
 type: bundle-manager

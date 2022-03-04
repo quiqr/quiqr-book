@@ -20,7 +20,7 @@ The `color` field generates a colorpicker for entering color hex codes.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
 type: color

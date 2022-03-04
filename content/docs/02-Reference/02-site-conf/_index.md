@@ -27,5 +27,5 @@ except when you know whhat you're doing.
 | publish                        | array of dictionaries | mandatory | Array with publish configurations, currently only one is supported   |
 | publish.0.key                  | string                | mandatory | Keys are for internal use and must be unique                         |
 | publish.0.config               | dictionary            | mandatory | Dictionary with publish configuration information                    |
-| publish.0.config.type          | string                | mandatory | type publication endpoint. Currently only poppygo-cloud is supported |
+| publish.0.config.type          | string                | mandatory | type publication endpoint. Currently only Quiqr Cloud is supported   |
 | publish.0.config.defaultDomain | string                | mandatory | default live domain                                                  |

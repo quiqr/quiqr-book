@@ -29,7 +29,7 @@ the sub form fields.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: some_parent_field
 title: Some parent field
 type: nest

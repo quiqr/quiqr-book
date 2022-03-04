@@ -32,12 +32,12 @@ The `info` field is shows a readonly information box. It generates no output.
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 type: info
 size: small
 content: |-
-  ## I love \n\n![](https://poppygo.io/images/logo-nav.svg)
+  ## I love \n\n![](https://quiqr.org/images/logo-nav.svg)
 
   * it's smart
   * it's fast

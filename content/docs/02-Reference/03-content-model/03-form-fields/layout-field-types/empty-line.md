@@ -20,7 +20,7 @@ The `empty-line` field is renders 1 or more empty lines in the form. It generate
 
 ### Configuration
 
-{{< code-toggle file="./poppygo/model/base" >}}
+{{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 type: empty-line
 amount: 2

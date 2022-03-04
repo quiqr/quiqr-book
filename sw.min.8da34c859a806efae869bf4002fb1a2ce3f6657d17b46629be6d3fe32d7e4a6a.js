@@ -1,0 +1,1 @@
+navigator.serviceWorker&&navigator.serviceWorker.register("/quiqr-book/sw.js",{scope:"/quiqr-book/"})

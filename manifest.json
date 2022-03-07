@@ -1,14 +1,14 @@
 {
-  "name": "Documentation",
-  "short_name": "Documentation",
-  "start_url": "/book/",
-  "scope": "/book/",
+  "name": "QUIQR Documentation",
+  "short_name": "QUIQR Documentation",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/book/favicon.svg",
+      "src": "/favicon.svg",
       "sizes": "512x512"
     }
   ]

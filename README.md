@@ -1,6 +1,6 @@
 # Quiqr Book
 
-The book is located at <https://quiqr.org/book/>.
+The book is located at <https://book.quiqr.org/>.
 
 <center><img src="static/logo-banner.svg" width=40% /></center>
 

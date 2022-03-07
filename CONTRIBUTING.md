@@ -30,7 +30,7 @@ particularly Quiqr-specific.
 ## Style Guide
 
 This style guide outlines the standards for contributing to the Handbook. The
-manual on <https://quiqr.org/book/> is generated from an
+manual on <https://book.quiqr.org/> is generated from an
 [hugo-book](https://github.com/alex-shpak/hugo-book) site stored in the
 [quiqr-book](https://github.com/quiqr/quiqr-book/) repository.
 

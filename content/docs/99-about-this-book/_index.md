@@ -19,7 +19,7 @@ Those looking for tips and tricks on how to develop Hugo websites should
 consult the official [Hugo Documentation](https://gohugo.io/documentation/) or
 the [Hugo Forum](https://discourse.gohugo.io/).
 
-The latest version of this book is located at https://quiqr.org/book/.
+The latest version of this book is located at https://book.quiqr.org/.
 
 ## Example Commands
 

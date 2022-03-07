@@ -19,5 +19,5 @@ completely tailored to cater the specific model of a Hugo website.
 
 This reference is up to date for Quiqr Version 0.9
 
-<center><img src="/book/logo-banner.svg" width=200px /></center>
+<center><img src="/logo-banner.svg" width=200px /></center>
 

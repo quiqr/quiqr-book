@@ -1,6 +1,6 @@
 {
-  "name": "Documentation",
-  "short_name": "Documentation",
+  "name": "The Quiqr Book",
+  "short_name": "The Quiqr Book",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

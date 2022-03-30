@@ -32,7 +32,7 @@ images.
 |-------------|------------|-----------|----------------------------------------------|
 | key         | string     | mandatory | Keys are for internal use and must be unique |
 | title       | string     | mandatory | The title of the element                     |
-| path        | string     | mandatory | The path to the location of the files        |
+| path        | string     | mandatory | The path to the location of the files. When the path starts with `/` files are stored in the directory relative to the site root directory. Without a leading `/` files are stored in the directory relative to the where the markdown or data file is stored.        |
 | extensions  | array      | optional  | List of allowed filetypes                    |
 | fields      | array      | optional  | List of fields as subform                    |
 

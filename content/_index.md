@@ -1,10 +1,12 @@
 ---
-title: Quiqr Documentation
+title: The Quiqr Book
 type: docs
 xbookToc: false
 ---
 
-# Quiqr
+<center><img src="/booklarge.png" width=200px /></center>
+
+# The Quiqr Book
 
 Quiqr is a content admin application for Hugo websites. With Quiqr you can
 enable users to manage content of a Hugo website and let them publish a static
@@ -19,5 +21,4 @@ completely tailored to cater the specific model of a Hugo website.
 
 This reference is up to date for Quiqr Version 0.9
 
-<center><img src="/logo-banner.svg" width=200px /></center>
 

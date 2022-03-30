@@ -34,11 +34,11 @@ images.
 | title       | string     | mandatory | The title of the element                     |
 | path        | string     | mandatory | The path to the location of the files. When the path starts with `/` files are stored in the directory relative to the site root directory. Without a leading `/` files are stored in the directory relative to the where the markdown or data file is stored.        |
 | maxItems    | integer    | optional  | max amount of files allowed to add           |
-| maxItems    | integer    | optional  | max amount of files allowed to add           |
+| forceFileName | string    | optional  | when forceFileName is set to a filename, the uploaded file is renamed to this filename including it's extension. When forceFileName is set maxItems is automatically set to 1 NOTE, files are not converted, it's wise to only allow the same extension  |
 | extensions  | array      | optional  | List of allowed filetypes                    |
 | fields      | array      | optional  | List of fields as subform                    |
 
-## Sample
+## Sample 1
 
 ### Configuration
 
@@ -61,12 +61,51 @@ fields:
 
 ### Output
 
+```ls
+ ..
+ content/portfolio/item2
+ ├── images/
+ │  ├── backgound-image.jpg
+ │  └── foregound-image.jpg
+ └── index.md
+ static/
+ themes/
+ ..
 ```
-drwxr-xr-x    - poppy 25 Mar 10:09 content/portfolio/item2
-drwxr-xr-x    - poppy 11 Apr 16:42 ├── images
-.rw-r--r-- 198k poppy 19 Mar 14:43 │  ├── backgound-image.jpg
-.rw-r--r-- 163k poppy 19 Mar 14:43 │  └── foregound-image.jpg
-.rw-r--r--  148 poppy 11 Apr 16:42 └── index.md
+
+## Sample 2
+
+This configuration looks the same but the path starts with a `/`
+### Configuration
+
+{{< code-toggle file="./quiqr/model/base" >}}
+key: site_images
+title: Site Images
+type: bundle-manager
+path: /static/images
+extensions:
+  - jpg
+  - png
+  - jpeg
+  - pdf
+  - svg
+fields:
+  - key: thumb
+    type: bundle-image-thumbnail
+{{< /code-toggle >}}
+```
+
+### Output
+
+```ls
+ ..
+ content/
+ static/
+ └── images/
+    ├── image1.jpg
+    └── image2.jpg
+ themes/
+ ..
 ```
 
 ## Known issues

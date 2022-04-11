@@ -63,6 +63,82 @@ categories:
 sample_field: lato
 ```
 
+## Hugo Theme Template Implementation
+
+This is an example implementation for managing 3 fonts with Quiqr in your Hugo Theme. The video shows the result applied to the vex-theme.
+
+**Create a partial model file** with the path `SITEROOT/quiqr/model/partials/single_design.yaml` Add this configuration:
+
+```
+---
+file: data/design.json
+title: Design
+fields:
+  - key: "primary_font"
+    title: "Main Text Font"
+    type: "font-picker"
+    tip: "choose your font"
+    limit: 50
+    categories:
+      - sans-serif
+
+  - key: "headings_font"
+    title: "Headings Font"
+    type: "font-picker"
+    tip: "choose your font"
+    limit: 300
+```
+
+
+**Add partial to your singles file** with the path `SITEROOT`/quiqr/model/include/singles.yaml`
+
+```
+- key: design
+  _mergeFromPartial: single_design
+```
+
+**Add single to your menu file** with the path `SITEROOT`/quiqr/model/include/menu.yaml`
+
+```
+- key: Settings
+  menuItems:
+    - key: design
+  title: Settings
+```
+
+**Create a partial template in your hugo theme** called `style-fonts-import.html` and include this the `<head>` of your Hugo Theme.
+
+```
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family={{ $.Site.Data.design.primary_font }}:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family={{ $.Site.Data.design.secondary_font }}:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family={{ $.Site.Data.design.headings_font }}:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+```
+
+**Create a partial template in your hugo theme** called `style-overrides.html` and include this the `<head>` of your Hugo Theme.
+
+```
+<style>
+
+body {
+  font-family: '{{$.Site.Data.design.primary_font }}', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: '{{ $.Site.Data.design.headings_font }}', serif;
+}
+.testimonials .testimonial-block p {
+  font-family: '{{ $.Site.Data.design.secondary_font }}', serif;
+}
+</style>
+```
+
 ## Credits
 
 Font Picker is based on [Font Picker React](https://github.com/samuelmeuli/font-picker-react).

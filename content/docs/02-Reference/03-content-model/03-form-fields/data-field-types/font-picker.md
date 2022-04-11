@@ -67,6 +67,9 @@ sample_field: lato
 
 This is an example implementation for managing 3 fonts with Quiqr in your Hugo Theme. The video shows the result applied to the vex-theme.
 
+https://user-images.githubusercontent.com/658612/162726167-788afeb3-5ef6-4e0f-9e83-8c762a4ced81.mp4
+
+
 **Create a partial model file** with the path `SITEROOT/quiqr/model/partials/single_design.yaml` Add this configuration:
 
 ```

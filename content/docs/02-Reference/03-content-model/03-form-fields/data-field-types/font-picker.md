@@ -7,6 +7,8 @@ title: Font Picker
 The `font-picker` field creates a font picker field populated by the Google
 Fonts Api. The output is a string with a Font Family name.
 
+<embed src="../font-picker.mp4" autostart="false" height="500" width="700" /></embed>
+
 {{< figure src="../font-picker.png" caption="Font Picker" >}}
 
 ## Properties
@@ -67,8 +69,6 @@ sample_field: lato
 
 This is an example implementation for managing 3 fonts with Quiqr in your Hugo Theme. The [video](https://user-images.githubusercontent.com/658612/162726167-788afeb3-5ef6-4e0f-9e83-8c762a4ced81.mp4) shows the result applied to the vex-theme.
 
-
-<embed src="../font-picker.mp4" autostart="false" height="500" width="700" /></embed>
 
 **Create a partial model file** with the path `SITEROOT/quiqr/model/partials/single_design.yaml` Add this configuration:
 

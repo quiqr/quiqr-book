@@ -1,6 +1,7 @@
 ---
 title: Quiqr Cloud Hosting
 weight: 10
+bookCollapseSection: true
 ---
 
 # Quiqr Cloud Hosting

@@ -61,9 +61,3 @@ export default [
 
 At this point you should implement your own code. It's wise to test the new
 type in a demo website while you implement the new type. Take small steps.
-
-
-
-
-
-

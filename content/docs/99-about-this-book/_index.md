@@ -34,7 +34,7 @@ Some examples include text with placeholders. Placeholders indicate where you
 should substitute the appropriate information. For example:
 
 ```
-$ cat ~/Sukoh/config.<site_name>.json
+$ cat ~/Quiqr Data/config.<site_name>.json
 ```
 
 This means you need to substitute the text `<site_name>` with the actual site

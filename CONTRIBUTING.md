@@ -52,13 +52,13 @@ information. They should use square brackets (`[` and `]`) and contain only
 lower-case text, with words separated by underscores. For example:
 
 ```
-$ cat ~/Sukoh/config.<site_name>.json
+$ cat ~/Quiqr Data/config.<site_name>.json
 ```
 
 and not:
 
 ```
-$ cat ~/Sukoh/config.[site_name].json
+$ cat ~/Quiqr Data/config.[site_name].json
 ```
 
 ### Links

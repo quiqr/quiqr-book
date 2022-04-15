@@ -1,5 +1,5 @@
 ---
-title: Menu
+title: menu
 weight: 40
 ---
 

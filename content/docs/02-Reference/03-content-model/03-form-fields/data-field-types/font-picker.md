@@ -97,7 +97,7 @@ fields:
 
 ```
 - key: design
-  _mergeFromPartial: single_design
+  _mergePartial: single_design
 ```
 
 **Add single to your menu file** with the path `SITEROOT`/quiqr/model/include/menu.yaml`

@@ -7,7 +7,7 @@ xbookToc: false
 # Site configuration File
 
 Every Quiqr website has a top-level configuration file. It's located in
-```$HOME/Sukoh/config.websitename.json```.
+```$HOME/Quiqr Data/config.websitename.json```.
 The site configurations tells Quiqr where to find the site files and where to
 publish the website.
 

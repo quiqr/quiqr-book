@@ -6,7 +6,7 @@ weight: 70
 # Root property: dynamics
 
 The ```dynamics``` property is optional. Dynamics are used to dynamically mount
-sub-forms in the accordion form field.
+sub-forms in the [accordion form field](/docs/02-reference/03-content-model/03-form-fields/container-field-types/accordion/).
 
 The dynamics property contains an array of dictionaries which itself it a form field definition.
 

@@ -10,11 +10,12 @@ The `color` field generates a colorpicker for entering color hex codes.
 
 ## Properties
 
-| property  | value type | optional                  | description                                                                               |
-|-----------|------------|---------------------------|-------------------------------------------------------------------------------------------|
-| key       | string     | mandatory                 | Keys are for internal use and must be unique                                              |
-| title     | string     | mandatory                 | The title of the element                                                                  |
-| tip       | string     | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
+| property | value type | optional                  | description                                                                               |
+|----------|------------|---------------------------|-------------------------------------------------------------------------------------------|
+| key      | string     | mandatory                 | Keys are for internal use and must be unique                                              |
+| title    | string     | mandatory                 | The title of the element                                                                  |
+| autoSave | boolean    | optional (default: false) | Form data is automatically saved after changing the value                                 |
+| tip      | string     | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
 
 ## Sample
 

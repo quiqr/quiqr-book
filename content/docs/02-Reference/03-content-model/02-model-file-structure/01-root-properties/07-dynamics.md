@@ -6,9 +6,26 @@ weight: 70
 # Root property: dynamics
 
 The ```dynamics``` property is optional. Dynamics are used to dynamically mount
-sub-forms in the [accordion form field](/docs/02-reference/03-content-model/03-form-fields/container-field-types/accordion/).
+sub-forms in the [accordion form
+field](/docs/02-reference/03-content-model/03-form-fields/container-field-types/accordion/).
 
 The dynamics property contains an array of dictionaries which itself it a form field definition.
+
+## Supported fields in dynamic sub form
+
+**Note** Not all field types can be used in a subform. This list with field types is known to work:
+
+- string
+- image-select
+- nest
+- accordion
+- boolean
+- unique
+
+These field types are know NOT to work:
+
+- section
+- pull
 
 ## Example
 
@@ -23,10 +40,9 @@ dynamics:
       - key: buttontxt
         title: Button text
         type: string
+
   - key: component-bullet-list
     component_type: bullet-list
-    type: section
-    groupdata: true
     fields:
       - key: text1
         title: Text 1

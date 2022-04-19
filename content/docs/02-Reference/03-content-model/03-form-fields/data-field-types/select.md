@@ -23,6 +23,7 @@ an array of numbers or strings.
 | tip               | string                                | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
 | default           | string OR number OR  array of strings | optional (default: null)  | default value when the key is not set yet                                                 |
 | multiple          | boolean                               | optional (default: false) | Enable multiple selection                                                                 |
+| autoSave          | boolean                               | optional (default: false) | Form data is automatically saved after changing the value                                 |
 | options           | array of dictionaries                 | mandatory                 | Array with title/value pairs                                                              |
 | options.[n].text  | string                                | mandatory                 | String with option visible text                                                           |
 | options.[n].value | string                                | mandatory                 | String with option value to save when selected                                            |

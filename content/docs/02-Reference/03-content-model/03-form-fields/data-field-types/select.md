@@ -16,20 +16,22 @@ an array of numbers or strings.
 
 ## Properties
 
-| property          | value type                            | optional                  | description                                                                               |
-|-------------------|---------------------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-| key               | string                                | mandatory                 | Keys are for internal use and must be unique                                              |
-| title             | string                                | mandatory                 | The title of the element                                                                  |
-| tip               | string                                | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
-| default           | string OR number OR  array of strings | optional (default: null)  | default value when the key is not set yet                                                 |
-| multiple          | boolean                               | optional (default: false) | Enable multiple selection                                                                 |
-| autoSave          | boolean                               | optional (default: false) | Form data is automatically saved after changing the value                                 |
-| options           | array of dictionaries                 | mandatory                 | Array with title/value pairs                                                              |
-| options.[n].text  | string                                | mandatory                 | String with option visible text                                                           |
-| options.[n].value | string                                | mandatory                 | String with option value to save when selected                                            |
+| property          | value type                                | optional                  | description                                                                               |
+|-------------------|-------------------------------------------|---------------------------|-------------------------------------------------------------------------------------------|
+| key               | string                                    | mandatory                 | Keys are for internal use and must be unique                                              |
+| title             | string                                    | mandatory                 | The title of the element                                                                  |
+| tip               | string                                    | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
+| default           | string OR number OR  array of strings     | optional (default: null)  | default value when the key is not set yet                                                 |
+| multiple          | boolean                                   | optional (default: false) | Enable multiple selection                                                                 |
+| autoSave          | boolean                                   | optional (default: false) | Form data is automatically saved after changing the value                                 |
+| options           | array of dictionaries OR array of strings | mandatory                 | Array with title/value pairs, or an array with strings when text and value are the same   |
+| options.[n].text  | string                                    | optional                  | String with option visible text                                                           |
+| options.[n].value | string                                    | optional                  | String with option value to save when selected                                            |
 
 
-## Sample
+## Example 1
+
+This example shows when value and text differ
 
 ### Configuration
 
@@ -46,6 +48,30 @@ options:
     value: 2
   - text: Option 3
     value: 3
+{{< /code-toggle >}}
+
+### Output
+
+```yaml
+sample_field: 2
+```
+
+## Example 2
+
+This example shows when value and text are the same
+
+### Configuration
+
+{{< code-toggle file="./quiqr/model/base" >}}
+key: sample_field
+title: Sample field
+type: select
+multiple: false
+default: 2
+options:
+  - Option 1
+  - Option 2
+  - Option 3
 {{< /code-toggle >}}
 
 ### Output

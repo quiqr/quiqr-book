@@ -17,7 +17,6 @@ single collection dictionary.
 | dataformat | string: yaml, toml,json       | mandatory | Defines the output format of the frontmatter block. Collections can only handle markdown files. the outputs regards to the frontmatter |
 | extension  | ???                           | mandatory | ???                                                                                                                                    |
 | title      | string                        | mandatory | The title of this page in the menu and when Quiqr App refers to this page                                                              |
-| file       | string: relative path to file | mandatory | The path to the file. This is the data storage. Can be data/somefile.{json,toml,yaml} or content/somefile.md                           |
 | itemtitle  | string                        | mandatory | The singular name of the collection items                                                                                              |
 | hideIndex  | boolean                       | optional  | when set `true` the _index.md is not showed in the list of items                                                                       |
 | folder     | string: relative path to dir  | mandatory | The path to the directory containing all files with the configured extension.                                                          |

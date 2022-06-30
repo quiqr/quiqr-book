@@ -19,6 +19,6 @@ completely tailored to cater the specific model of a Hugo website.
 
 ## Version
 
-This reference is up to date for Quiqr Version 0.9
+This reference is up to date for Quiqr Version 0.13.x
 
 

@@ -20,7 +20,7 @@ single collection dictionary.
 | itemtitle            | string                                   | mandatory | The singular name of the collection items                                                                                              |
 | hideIndex            | boolean                                  | optional  | when set `true` the _index.md is not showed in the list of items                                                                       |
 | folder               | string: relative path to dir             | mandatory | The path to the directory containing all files with the configured extension.                                                          |
-| previewUrl           | string: relative url path to the website | optional  | When set, this path as base path to preview the page                                                                                   |
+| previewUrlBase       | string: relative url path to the website | optional  | When set, this path as base path to preview the page                                                                                   |
 | hidePreviewIcon      | boolean                                  | optional  | Hide Preview Icon which opens the page in the browser                                                                                  |
 | hideExternalEditIcon | boolean                                  | optional  | Hide Enternal Editor Icon which opens the file in the OS Text Editor                                                                   |
 | hideSaveButton       | boolean                                  | optional  | Hide form Save button                                                                                                                  |

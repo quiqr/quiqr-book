@@ -71,8 +71,9 @@ When the query_string starts with `.` the file content data will be queried.
 
 ## Meta data functions
 
-- **filename**: returns the full filename-component. e.g. `blog-about-quiqr.md`
+- **file_name**: returns the full filename-component. e.g. `blog-about-quiqr.md`
 - **file_base_name**: returns the filename with out extension. e.g. `blog-about-quiqr`
+- **parent_dir**: returns the parent directory of the found filename with out extension. e.g. `the-post` when the filename is a bundle posts/the-post/index.md
 
 ### Populating select option with filenames from a directory.
 

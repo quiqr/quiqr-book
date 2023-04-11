@@ -36,6 +36,7 @@ images.
 | maxItems    | integer    | optional  | max amount of files allowed to add           |
 | forceFileName | string    | optional  | when forceFileName is set to a filename, the uploaded file is renamed to this filename including it's extension. When forceFileName is set maxItems is automatically set to 1 NOTE, files are not converted, it's wise to only allow the same extension  |
 | extensions  | array      | optional  | List of allowed filetypes                    |
+| addButtonLocationTop| boolean (default: false) | optional| Show `add` button on top of the widget in stead of at the bottom |
 | fields      | array      | optional  | List of fields as subform                    |
 
 ## Sample 1

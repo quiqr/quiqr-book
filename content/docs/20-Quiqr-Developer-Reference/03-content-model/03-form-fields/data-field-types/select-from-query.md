@@ -79,7 +79,7 @@ When the query_string starts with `.` the file content data will be queried.
 
 ```
 query_glob: content/resources/*.md
-query_string: #filename[]
+query_string: #file_name[]
 ```
 
 ### Populating select option with titles from front matter from multiple directories.

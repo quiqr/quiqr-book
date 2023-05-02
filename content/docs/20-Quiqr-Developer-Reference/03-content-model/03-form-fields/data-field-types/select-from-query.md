@@ -33,7 +33,7 @@ This example shows a simple query.
 {{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
-type: select
+type: select-from-query
 multiple: false
 default: 2
 query_glob: data/system_data.json

@@ -33,7 +33,7 @@ This example shows a simple query.
 {{< code-toggle file="./quiqr/model/base" >}}
 key: sample_field
 title: Sample field
-type: select
+type: select-from-query
 multiple: false
 default: 2
 query_glob: data/system_data.json
@@ -79,7 +79,7 @@ When the query_string starts with `.` the file content data will be queried.
 
 ```
 query_glob: content/resources/*.md
-query_string: #filename[]
+query_string: #file_name[]
 ```
 
 ### Populating select option with titles from front matter from multiple directories.

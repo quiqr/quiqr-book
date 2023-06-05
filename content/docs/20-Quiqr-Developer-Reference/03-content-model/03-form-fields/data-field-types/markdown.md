@@ -16,7 +16,7 @@ values are allowed by enableing this property.
 | property  | value type | optional                  | description                                                                               |
 |-----------|------------|---------------------------|-------------------------------------------------------------------------------------------|
 | key       | string     | mandatory                 | Keys are for internal use and must be unique                                              |
-| title     | string     | mandatory                 | The title of the element                                                                  |
+| title     | string     | optional                  | The title of the element                                                                  |
 | tip       | string     | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
 | default   | string     | optional (default: null)  | default value when the key is not set yet                                                 |
 | preview   | boolean    | optional (default: false) | Enable preview field with rendered HTML                                                   |

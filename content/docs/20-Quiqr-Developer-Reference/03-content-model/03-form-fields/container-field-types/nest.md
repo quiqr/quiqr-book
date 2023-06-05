@@ -21,7 +21,7 @@ the sub form fields.
 | property  | value type            | optional                 | description                                   |
 |-----------|-----------------------|--------------------------|-----------------------------------------------|
 | key       | string                | mandatory                | Keys are for internal use and must be unique. |
-| title     | string                | mandatory                | The title of the element.                     |
+| title     | string                | optional                 | The title of the element.                     |
 | fields    | array of dictionaries | mandatory                | These are the subform input fields.           |
 | groupdata | boolean               | optional (default: true) | When set true to child field value are stored in a hash below the section key. When set false the values are placed at the same level as the section neighbour fields |
 

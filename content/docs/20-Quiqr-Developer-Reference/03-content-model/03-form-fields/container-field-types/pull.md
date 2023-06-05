@@ -17,7 +17,7 @@ to the pull field. The values are stored as dictionary below the pull key.
 | property | value type            | optional                 | description                                                                               |
 |----------|-----------------------|--------------------------|-------------------------------------------------------------------------------------------|
 | key      | string                | mandatory                | Keys are for internal use and must be unique.                                             |
-| fields   | array of dictionaries | mandatory                | These are the subform input fields.                                                       |
+| fields   | array of dictionaries | optional                 | These are the subform input fields.                                                       |
 | group    | string                | optional (default: null) | key to store the dictionary in. When not set, the key of the pull element itself is used. |
 
 ## Sample

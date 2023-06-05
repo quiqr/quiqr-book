@@ -16,7 +16,7 @@ output is a collection of values of the child field value type.
 | property | value type | optional  | description                                   |
 |----------|------------|-----------|-----------------------------------------------|
 | key      | string     | mandatory | Keys are for internal use and must be unique. |
-| title    | string     | mandatory | The title of the element.                     |
+| title    | string     | optional  | The title of the element.                     |
 | field    | dictionary | mandatory | Dictionary witg child field definition.       |
 
 ## Sample

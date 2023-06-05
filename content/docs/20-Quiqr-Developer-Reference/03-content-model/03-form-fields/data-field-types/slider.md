@@ -13,7 +13,7 @@ The `slider` field generates a slider for entering numbers.
 | property | value type | optional                  | description                                                                               |
 |----------|------------|---------------------------|-------------------------------------------------------------------------------------------|
 | key      | string     | mandatory                 | Keys are for internal use and must be unique                                              |
-| title    | string     | mandatory                 | The title of the element                                                                  |
+| title    | string     | optional                  | The title of the element                                                                  |
 | step     | number     | mandatory                 | Amount between steps                                                                      |
 | min      | number     | mandatory                 | Starting value                                                                            |
 | max      | number     | mandatory                 | Ending value                                                                              |

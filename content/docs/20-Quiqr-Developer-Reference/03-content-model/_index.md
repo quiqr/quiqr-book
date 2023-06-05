@@ -34,6 +34,22 @@ seperate files and partials makes it possible to reuse configuration code.
 The main keys Singles, Collections and Dynamics can have form fields definitions.
 These are the building blocks for creating forms.
 
+All available form field types are described in the section Form Fields. Form
+fields have their own properties for configuration. All form fields share
+the following properties:
+
+### Properties
+
+| property | value type | optional                 | description                                                                               |
+|----------|------------|--------------------------|-------------------------------------------------------------------------------------------|
+| key      | string     | mandatory                | Keys are for internal use and must be unique                                              |
+| disabled | boolean    | optional                 | Disabled elements are completely ignored and not visible in the form                      |
+
+### Full Example
+
+[The Kitchen Sink Template](https://github.com/quiqr/quiqr-template-kitchen-sink) has a every field type configured. Use this template
+to learn and play around with the Quiqr model.
+
 
 
 

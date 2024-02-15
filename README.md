@@ -17,4 +17,4 @@ team.
 
 ## Copyright
 
-Copyright 2022 Quiqr.
+Copyright 2024 Quiqr.

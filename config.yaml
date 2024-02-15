@@ -28,8 +28,8 @@ languages:
 
 menu:
   after:
-    - name: "Quiqr HQ"
-      url: "https://quiqr.app"
+    - name: "Quiqr Website"
+      url: "https://quiqr.org"
       weight: 40
     - name: "github/quiqr"
       url: "https://github.com/quiqr/"

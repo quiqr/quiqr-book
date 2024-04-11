@@ -21,6 +21,12 @@ fields, which are displayed as subform. The output is an array of dictionaries.
 | fields                | array of dictionaries                                    | mandatory | These are the form input fields.                                                                                                                                                                                                                                              |
 | fields.[n].arrayTitle | boolean                                                  | optional (default: false) | The value of the child field which has arrayTitle=true will be displayed as the accordion item title                                                                                                                                                                          |
 
+## Disabled child fields
+
+if a child field of an accordion has a boolean field with a `disabled` and this
+is set to `true`, the item will display light grey text to indicate it's
+disabled.
+
 ## Regular accordion
 
 Below an example of a regular accordion configuration without dynamic forms.

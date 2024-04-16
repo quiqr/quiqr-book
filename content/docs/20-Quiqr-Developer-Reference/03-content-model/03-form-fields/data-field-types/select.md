@@ -16,18 +16,20 @@ an array of numbers or strings.
 
 ## Properties
 
-| property          | value type                                | optional                  | description                                                                               |
-|-------------------|-------------------------------------------|---------------------------|-------------------------------------------------------------------------------------------|
-| key               | string                                    | mandatory                 | Keys are for internal use and must be unique                                              |
-| title             | string                                    | optional                  | The title of the element                                                                  |
-| tip               | string                                    | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box |
-| default           | string OR number OR  array of strings     | optional (default: null)  | default value when the key is not set yet                                                 |
-| multiple          | boolean                                   | optional (default: false) | Enable multiple selection                                                                 |
-| autoSave          | boolean                                   | optional (default: false) | Form data is automatically saved after changing the value                                 |
-| options           | array of dictionaries OR array of strings | mandatory                 | Array with title/value pairs, or an array with strings when text and value are the same   |
-| options.[n].text  | string                                    | optional                  | String with option visible text                                                           |
-| options.[n].value | string                                    | optional                  | String with option value to save when selected                                            |
-
+| property               | value type                                | optional                  | description                                                                                                       |
+|------------------------|-------------------------------------------|---------------------------|-------------------------------------------------------------------------------------------------------------------|
+| key                    | string                                    | mandatory                 | Keys are for internal use and must be unique                                                                      |
+| title                  | string                                    | optional                  | The title of the element                                                                                          |
+| tip                    | string                                    | optional (default: null)  | Text entered here with markdown formatting is displayed as context help in an overlay box                         |
+| default                | string OR number OR  array of strings     | optional (default: null)  | default value when the key is not set yet                                                                         |
+| multiple               | boolean                                   | optional (default: false) | Enable multiple selection                                                                                         |
+| autoSave               | boolean                                   | optional (default: false) | Form data is automatically saved after changing the value                                                         |
+| option_image_path      | string                                    | optional (default: null)  | path to images having the same name as the options values e.g. `quiqr/model/images`                               |
+| option_image_width     | number                                    | optional (default: null)  | when `option_image_path` is set image width as well to have a aligned option listing                              |
+| option_image_extension | string                                    | optional (defaul: null)   | when `option_image_path` is set, optionally set extension to e.g. `jpg`. Then all images should be of type `jpg`. |
+| options                | array of dictionaries OR array of strings | mandatory                 | Array with title/value pairs, or an array with strings when text and value are the same                           |
+| options.[n].text       | string                                    | optional                  | String with option visible text                                                                                   |
+| options.[n].value      | string                                    | optional                  | String with option value to save when selected                                                                    |
 
 ## Example 1
 

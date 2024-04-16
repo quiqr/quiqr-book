@@ -47,8 +47,10 @@ the following properties:
 
 ### Full Example
 
-[The Kitchen Sink Template](https://github.com/quiqr/quiqr-template-kitchen-sink) has a every field type configured. Use this template
-to learn and play around with the Quiqr model.
+[The Kitchen Sink
+Template](https://github.com/quiqr/quiqr-template-kitchen-sink) has a every
+field type configured. Use this template to learn and play around with the
+Quiqr model.
 
 
 

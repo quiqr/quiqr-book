@@ -19,21 +19,25 @@ quite a complex datatype field.
 
 ## Properties
 
-| property                                          | value type | optional                                       | description                                                                               |
-|:--------------------------------------------------|:-----------|:-----------------------------------------------|:------------------------------------------------------------------------------------------|
-| key                                               | string     | mandatory                                      | Keys are for internal use and must be unique                                              |
-| title                                             | string     | optional                                       | The title of the element                                                                  |
-| tip                                               | string     | optional (default: null)                       | Text entered here with markdown formatting is displayed as context help in an overlay box |
-| xScaleTitle                                       | string     | optional (default: null)                       | X-Axis Title, (cost)                                                                      |
-| yScaleTitle                                       | string     | optional (default: null)                       | Y-Axis Title, (impact)                                                                    |
-| dataSetsPath                                      | string     | optional (default: null)                       | Path in data where datasets are stored                                                    |
-| dataSetsKeyToLabel                                | boolean    | optional (default: false)                      | Source data is a dictionary, convert to array for Chartjs                                 |
-| dataSetsLabelPath                                 | string     | optional (default: null)                       | Path in data where dataset-label are stored                                               |
-| dataSetsDataPointsPath                            | string     | optional (default: null)                       | Path in data where datapoints are stored                                                  |
-| dataSetsDataPointsKeyToItem                       | boolean    | optional (default: false)                      | Source data is a dictionary, convert to array for Chartjs                                 |
-| dataSetsDataPointPosXPath                         | string     | mandatory                                      | Path in datapoints where x-position is stored                                             |
-| dataSetsDataPointPosYPath                         | string     | mandatory                                      | Path in datapoints where y-position is stored                                             |
-| dataSetsDataPointLabelTemplate                    | string     | optional (default: x=${point.x}, y=${point.y}) | Template for creating a datapoint label                                                   |
+| property                       | value type | optional                                       | description                                                                               |
+|:-------------------------------|:-----------|:-----------------------------------------------|:------------------------------------------------------------------------------------------|
+| key                            | string     | mandatory                                      | Keys are for internal use and must be unique                                              |
+| title                          | string     | optional                                       | The title of the element                                                                  |
+| tip                            | string     | optional (default: null)                       | Text entered here with markdown formatting is displayed as context help in an overlay box |
+| xScaleTitle                    | string     | optional (default: null)                       | X-Axis Title, (cost)                                                                      |
+| yScaleTitle                    | string     | optional (default: null)                       | Y-Axis Title, (impact)                                                                    |
+| labelDoNow                     | string     | optional (default: DO NOW)                     | Quadrant top-left title                                                                   |
+| labelToPlan                    | string     | optional (default: TO PLAN)                    | Quadrant top-right title                                                                  |
+| labelDelegate                  | string     | optional (default: DELEGATE)                   | Quadrant bottom-left title                                                                |
+| labelDelete                    | string     | optional (default: DELETE)                     | Quadrant bottom-right title                                                               |
+| dataSetsPath                   | string     | optional (default: null)                       | Path in data where datasets are stored                                                    |
+| dataSetsKeyToLabel             | boolean    | optional (default: false)                      | Source data is a dictionary, convert to array for Chartjs                                 |
+| dataSetsLabelPath              | string     | optional (default: null)                       | Path in data where dataset-label are stored                                               |
+| dataSetsDataPointsPath         | string     | optional (default: null)                       | Path in data where datapoints are stored                                                  |
+| dataSetsDataPointsKeyToItem    | boolean    | optional (default: false)                      | Source data is a dictionary, convert to array for Chartjs                                 |
+| dataSetsDataPointPosXPath      | string     | mandatory                                      | Path in datapoints where x-position is stored                                             |
+| dataSetsDataPointPosYPath      | string     | mandatory                                      | Path in datapoints where y-position is stored                                             |
+| dataSetsDataPointLabelTemplate | string     | optional (default: x=${point.x}, y=${point.y}) | Template for creating a datapoint label                                                   |
 
 ## Sample
 

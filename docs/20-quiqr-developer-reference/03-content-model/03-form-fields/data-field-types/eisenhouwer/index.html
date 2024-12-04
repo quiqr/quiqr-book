@@ -1,0 +1,253 @@
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.81.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Eisenhouwer #  Quiqr version >= 0.18.10
+The eisenhouwer field creates a eisenhouwer matrix canvas which allows editors to prioritize tasks by dragging datapoints. The tasks are stored as datapoints which can optinally contain other meta data. Existing metadata will be kept and can be used in the data point label using the dataSetsDataPointLabelTemplate for configuration.
+Please also checkout the latest kitchensink template for eisenhouwer examples. This is quite a complex datatype field."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Eisenhouwer Matrix"><meta property="og:description" content="Eisenhouwer #  Quiqr version >= 0.18.10
+The eisenhouwer field creates a eisenhouwer matrix canvas which allows editors to prioritize tasks by dragging datapoints. The tasks are stored as datapoints which can optinally contain other meta data. Existing metadata will be kept and can be used in the data point label using the dataSetsDataPointLabelTemplate for configuration.
+Please also checkout the latest kitchensink template for eisenhouwer examples. This is quite a complex datatype field."><meta property="og:type" content="article"><meta property="og:url" content="https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/eisenhouwer/"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2024-12-04T22:53:22+01:00"><title>Eisenhouwer Matrix | The Quiqr Book</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.00ba6b6ccc5ac45ee314577a5905949cf5222c5fb0af8e8b34102152121a491a.css integrity="sha256-ALprbMxaxF7jFFd6WQWUnPUiLF+wr46LNBAhUhIaSRo="><script defer src=/en.search.min.89f46f0839312222f6308a8ec9ecb3ca81e5141655c918af9e2df6a9543bec12.js integrity="sha256-ifRvCDkxIiL2MIqOyeyzyoHlFBZVyRivni32qVQ77BI="></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk="></script><style>figure{text-align:center;font-size:smaller;text-indent:0;border:thin silver solid;margin-left:auto;margin-right:auto;display:table;margin:.5em;padding:1.5em;border-radius:8px;font-style:italic;xbox-shadow:0 1px 1px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.15),0 2px 4px rgba(0,0,0,.15)}.tab-button{margin-bottom:1px;position:relative;z-index:1;color:#333;border-color:#ccc;outline:none;background-color:#fff}.tab-pane code{background:#f1f2f2;border-radius:0}.tab-pane .chroma{background:0 0;padding:0}.tab-button.active{border-bottom-color:#f1f2f2;background-color:#d1d2d2}.tab-content .tab-pane{display:none}.tab-content .tab-pane.active{display:block}.tab-content .copy,.tab-content .copied{display:none}.tab-content .tab-pane.active+.copy,.tab-content .tab-pane.active+.copied{display:block}</style></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo-nav.svg alt=Logo><span>The Quiqr Book</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li class=book-section-flat><a href=https://book.quiqr.org/docs/10-getting-started/>Getting started</a><ul><li><a href=https://book.quiqr.org/docs/10-getting-started/01.installation/>Install Quiqr Desktop</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/10-getting-started/02.import-site/>Import Site</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/10-getting-started/10.quick-start-video/>Quick Start Video</a><ul></ul></li></ul></li><li class=book-section-flat><a href=https://book.quiqr.org/docs/15-site-and-cms-development/>Site and CMS Development</a><ul><li><a href=https://book.quiqr.org/docs/15-site-and-cms-development/01-user-roles/>User Roles</a><ul></ul></li></ul></li><li class=book-section-flat><span>Quiqr Developer Reference</span><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/01-anatomy-of-quiqr-site/>Anatomy of a Quiqr Site</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/02-site-conf/>Top Level Site Config File</a><ul></ul></li><li><input type=checkbox id=section-8445d913417153f274570e2d949bfdc6 class=toggle checked>
+<label for=section-8445d913417153f274570e2d949bfdc6 class="flex justify-between"><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/>Content Model</a></label><ul><li><input type=checkbox id=section-92bafdeae052bfe04b35f72d05793ffd class=toggle>
+<label for=section-92bafdeae052bfe04b35f72d05793ffd class="flex justify-between"><a>Model File Structure</a></label><ul><li><input type=checkbox id=section-d30035a911d4ec12bc984c8cd4763b38 class=toggle>
+<label for=section-d30035a911d4ec12bc984c8cd4763b38 class="flex justify-between"><a>Root properties</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/01-build/>build</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/02-serve/>serve</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/03-hugover/>hugover</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/04-menu/>menu</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/05-singles/>single</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/06-collections/>collections</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/07-dynamics/>dynamics</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/02-includes/>Includes</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/03-partials/>Partials</a></li></ul></li><li><input type=checkbox id=section-4df9205443a321e264947f9b9208b1d8 class=toggle checked>
+<label for=section-4df9205443a321e264947f9b9208b1d8 class="flex justify-between"><a>Form Fields</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/>Container Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/accordion/>Accordion</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/bundle-manager/>Bundle manager</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/leaf-array/>Leaf array</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/nest/>Nest</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/pull/>Pull</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/section/>Section</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/>Data Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/boolean/>Boolean</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/chips/>Chips</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/color/>Color</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/date/>Date</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/easymde/>Easy Markdown Editor</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/eisenhouwer/ class=active>Eisenhouwer Matrix</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/fonticon-picker/>Font Icon Picker</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/font-picker/>Font Picker</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/hidden/>Hidden</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/image-select/>Image Select</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/markdown/>Markdown</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/number/>Number</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/readonly/>Readonly</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/select/>Select</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/select-from-query/>Select from Query</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/slider/>Slider</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/string/>String</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/uniq/>Uniq</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/>Layout Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/bundle-image-thumbnail/>Bundle image thumbnail</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/empty-line/>Empty line</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/info/>Info</a></li></ul></li></ul></li><li><input type=checkbox id=section-87dccb2d7d767e0e17476b6a8f0ded3b class=toggle>
+<label for=section-87dccb2d7d767e0e17476b6a8f0ded3b class="flex justify-between"><a>Example Configurations</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/04-examples/02-example-model-configuration/>Blog (single file)</a></li></ul></li></ul></li></ul></li><li class=book-section-flat><span>Quiqr Developer Howto's</span><ul><li><a href=https://book.quiqr.org/docs/40-quiqr-project-development/01-create-a-new-field-type/>Create a new field type</a><ul></ul></li></ul></li><li class=book-section-flat><span>Release Notes</span><ul><li><input type=checkbox id=section-5cb9e7ebfd85d09b0c5655e1fcc4ca5b class=toggle>
+<label for=section-5cb9e7ebfd85d09b0c5655e1fcc4ca5b class="flex justify-between"><a href=https://book.quiqr.org/docs/80-release-notes/01-quiqr-desktop/>Quiqr Desktop</a></label><ul><li><a href=https://book.quiqr.org/docs/80-release-notes/01-quiqr-desktop/v0.10.x/>Quiqr Desktop v0.10</a></li><li><a href=https://book.quiqr.org/docs/80-release-notes/01-quiqr-desktop/v0.0-older/>Versions before v0.10</a></li></ul></li></ul></li><li class=book-section-flat><a href=https://book.quiqr.org/docs/99-about-this-book/>About this book</a><ul></ul></li></ul><ul><li><a href=https://quiqr.org target=_blank rel=noopener>Quiqr Website</a></li><li><a href=https://github.com/quiqr/ target=_blank rel=noopener>github/quiqr</a></li><li><a href=https://twitter.com/QuiqrApp target=_blank rel=noopener>@QuiqrApp</a></li></ul></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Eisenhouwer Matrix</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#eisenhouwer>Eisenhouwer</a><ul><li><a href=#properties>Properties</a></li><li><a href=#sample>Sample</a><ul><li><a href=#configuration>Configuration</a></li><li><a href=#output>Output</a></li></ul></li><li><a href=#sample-2>Sample 2</a><ul><li><a href=#configuration-1>Configuration</a></li><li><a href=#output-1>Output</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=eisenhouwer>Eisenhouwer
+<a class=anchor href=#eisenhouwer>#</a></h1><p><strong>Quiqr version >= 0.18.10</strong></p><p>The <code>eisenhouwer</code> field creates a eisenhouwer matrix canvas which allows
+editors to prioritize tasks by dragging datapoints. The tasks are stored as datapoints which can
+optinally contain other meta data. Existing metadata will be kept and can be
+used in the data point label using the <code>dataSetsDataPointLabelTemplate</code> for
+configuration.</p><p>Please also checkout the latest kitchensink template for eisenhouwer examples. This is
+quite a complex datatype field.</p><figure><img src=../eisenhouwer.png alt="Font Picker"><figcaption><p>Font Picker</p></figcaption></figure><h2 id=properties>Properties
+<a class=anchor href=#properties>#</a></h2><table><thead><tr><th style=text-align:left>property</th><th style=text-align:left>value type</th><th style=text-align:left>optional</th><th style=text-align:left>description</th></tr></thead><tbody><tr><td style=text-align:left>key</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>Keys are for internal use and must be unique</td></tr><tr><td style=text-align:left>title</td><td style=text-align:left>string</td><td style=text-align:left>optional</td><td style=text-align:left>The title of the element</td></tr><tr><td style=text-align:left>tip</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>Text entered here with markdown formatting is displayed as context help in an overlay box</td></tr><tr><td style=text-align:left>xScaleTitle</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>X-Axis Title, (cost)</td></tr><tr><td style=text-align:left>yScaleTitle</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>Y-Axis Title, (impact)</td></tr><tr><td style=text-align:left>dataSetsPath</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>Path in data where datasets are stored</td></tr><tr><td style=text-align:left>dataSetsKeyToLabel</td><td style=text-align:left>boolean</td><td style=text-align:left>optional (default: false)</td><td style=text-align:left>Source data is a dictionary, convert to array for Chartjs</td></tr><tr><td style=text-align:left>dataSetsLabelPath</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>Path in data where dataset-label are stored</td></tr><tr><td style=text-align:left>dataSetsDataPointsPath</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: null)</td><td style=text-align:left>Path in data where datapoints are stored</td></tr><tr><td style=text-align:left>dataSetsDataPointsKeyToItem</td><td style=text-align:left>boolean</td><td style=text-align:left>optional (default: false)</td><td style=text-align:left>Source data is a dictionary, convert to array for Chartjs</td></tr><tr><td style=text-align:left>dataSetsDataPointPosXPath</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>Path in datapoints where x-position is stored</td></tr><tr><td style=text-align:left>dataSetsDataPointPosYPath</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>Path in datapoints where y-position is stored</td></tr><tr><td style=text-align:left>dataSetsDataPointLabelTemplate</td><td style=text-align:left>string</td><td style=text-align:left>optional (default: x=${point.x}, y=${point.y})</td><td style=text-align:left>Template for creating a datapoint label</td></tr></tbody></table><h2 id=sample>Sample
+<a class=anchor href=#sample>#</a></h2><h3 id=configuration>Configuration
+<a class=anchor href=#configuration>#</a></h3><div class="code relative" id=./quiqr/model/base><div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">./quiqr/model/base.</div><button data-toggle-tab=yaml class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">yaml</button>&nbsp;
+<button data-toggle-tab=toml class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">toml</button>&nbsp;
+<button data-toggle-tab=json class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">json</button>&nbsp;</div><div class=tab-content><div data-pane=yaml class="code-copy-content nt3 tab-pane active"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>dataSetsDataPointLabelTemplate</span>: <span style=color:#ae81ff>${point.task}</span>
+<span style=color:#f92672>dataSetsDataPointPosXPath</span>: <span style=color:#ae81ff>.x</span>
+<span style=color:#f92672>dataSetsDataPointPosYPath</span>: <span style=color:#ae81ff>.y</span>
+<span style=color:#f92672>dataSetsDataPointsKeyToItem</span>: <span style=color:#66d9ef>false</span>
+<span style=color:#f92672>dataSetsDataPointsPath</span>: <span style=color:#ae81ff>.data</span>
+<span style=color:#f92672>dataSetsKeyToLabel</span>: <span style=color:#66d9ef>false</span>
+<span style=color:#f92672>dataSetsLabelPath</span>: <span style=color:#ae81ff>.label</span>
+<span style=color:#f92672>dataSetsPath</span>: <span style=color:#ae81ff>.datasets</span>
+<span style=color:#f92672>key</span>: <span style=color:#ae81ff>garden_tasks</span>
+<span style=color:#f92672>type</span>: <span style=color:#ae81ff>eisenhouwer</span>
+<span style=color:#f92672>xScaleTitle</span>: <span style=color:#ae81ff>More Sweat</span>
+<span style=color:#f92672>yScaleTitle</span>: <span style=color:#ae81ff>Happy Wild Life</span>
+</code></pre></div></div><div data-pane=toml class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>dataSetsDataPointLabelTemplate</span> = <span style=color:#e6db74>&#34;${point.task}&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointPosXPath</span> = <span style=color:#e6db74>&#34;.x&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointPosYPath</span> = <span style=color:#e6db74>&#34;.y&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointsKeyToItem</span> = <span style=color:#66d9ef>false</span>
+<span style=color:#a6e22e>dataSetsDataPointsPath</span> = <span style=color:#e6db74>&#34;.data&#34;</span>
+<span style=color:#a6e22e>dataSetsKeyToLabel</span> = <span style=color:#66d9ef>false</span>
+<span style=color:#a6e22e>dataSetsLabelPath</span> = <span style=color:#e6db74>&#34;.label&#34;</span>
+<span style=color:#a6e22e>dataSetsPath</span> = <span style=color:#e6db74>&#34;.datasets&#34;</span>
+<span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;garden_tasks&#34;</span>
+<span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;eisenhouwer&#34;</span>
+<span style=color:#a6e22e>xScaleTitle</span> = <span style=color:#e6db74>&#34;More Sweat&#34;</span>
+<span style=color:#a6e22e>yScaleTitle</span> = <span style=color:#e6db74>&#34;Happy Wild Life&#34;</span>
+</code></pre></div></div><div data-pane=json class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+   <span style=color:#f92672>&#34;dataSetsDataPointLabelTemplate&#34;</span>: <span style=color:#e6db74>&#34;${point.task}&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointPosXPath&#34;</span>: <span style=color:#e6db74>&#34;.x&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointPosYPath&#34;</span>: <span style=color:#e6db74>&#34;.y&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointsKeyToItem&#34;</span>: <span style=color:#66d9ef>false</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointsPath&#34;</span>: <span style=color:#e6db74>&#34;.data&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsKeyToLabel&#34;</span>: <span style=color:#66d9ef>false</span>,
+   <span style=color:#f92672>&#34;dataSetsLabelPath&#34;</span>: <span style=color:#e6db74>&#34;.label&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsPath&#34;</span>: <span style=color:#e6db74>&#34;.datasets&#34;</span>,
+   <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;garden_tasks&#34;</span>,
+   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;eisenhouwer&#34;</span>,
+   <span style=color:#f92672>&#34;xScaleTitle&#34;</span>: <span style=color:#e6db74>&#34;More Sweat&#34;</span>,
+   <span style=color:#f92672>&#34;yScaleTitle&#34;</span>: <span style=color:#e6db74>&#34;Happy Wild Life&#34;</span>
+}
+</code></pre></div></div></div></div><h3 id=output>Output
+<a class=anchor href=#output>#</a></h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>garden_tasks</span>:
+  <span style=color:#f92672>datasets</span>:
+    - <span style=color:#f92672>label</span>: <span style=color:#ae81ff>Garden Tasks</span>
+      <span style=color:#f92672>data</span>:
+        - <span style=color:#f92672>x</span>: <span style=color:#ae81ff>12.0</span>
+          <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>17.6</span>
+          <span style=color:#f92672>task</span>: <span style=color:#ae81ff>Paint the barn</span>
+        - <span style=color:#f92672>x</span>: <span style=color:#ae81ff>59.3</span>
+          <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>75.5</span>
+          <span style=color:#f92672>task</span>: <span style=color:#ae81ff>Grow strawberries</span>
+        - <span style=color:#f92672>x</span>: <span style=color:#ae81ff>11.2</span>
+          <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>79.9</span>
+          <span style=color:#f92672>task</span>: <span style=color:#ae81ff>Dig a pond</span>
+</code></pre></div><h2 id=sample-2>Sample 2
+<a class=anchor href=#sample-2>#</a></h2><h3 id=configuration-1>Configuration
+<a class=anchor href=#configuration-1>#</a></h3><div class="code relative" id=./quiqr/model/base><div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">./quiqr/model/base.</div><button data-toggle-tab=yaml class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">yaml</button>&nbsp;
+<button data-toggle-tab=toml class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">toml</button>&nbsp;
+<button data-toggle-tab=json class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">json</button>&nbsp;</div><div class=tab-content><div data-pane=yaml class="code-copy-content nt3 tab-pane active"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>dataSetsDataPointLabelTemplate</span>: |-<span style=color:#e6db74>
+</span><span style=color:#e6db74>  ${point.RiskCode}
+</span><span style=color:#e6db74>  ${point.QuestionTitle}</span>  
+<span style=color:#f92672>dataSetsDataPointPosXPath</span>: <span style=color:#ae81ff>.REPORT.importance_number_of_100</span>
+<span style=color:#f92672>dataSetsDataPointPosYPath</span>: <span style=color:#ae81ff>.REPORT.cost_number_of_100</span>
+<span style=color:#f92672>dataSetsDataPointsKeyToItem</span>: <span style=color:#66d9ef>true</span>
+<span style=color:#f92672>dataSetsKeyToLabel</span>: <span style=color:#66d9ef>true</span>
+<span style=color:#f92672>key</span>: <span style=color:#ae81ff>well_architected_improvements</span>
+<span style=color:#f92672>labelDelegate</span>: <span style=color:#ae81ff>DELEGATE</span>
+<span style=color:#f92672>labelDelete</span>: <span style=color:#ae81ff>DELETE</span>
+<span style=color:#f92672>labelDoNow</span>: <span style=color:#ae81ff>DO NOW</span>
+<span style=color:#f92672>labelToPlan</span>: <span style=color:#ae81ff>TO PLAN</span>
+<span style=color:#f92672>type</span>: <span style=color:#ae81ff>eisenhouwer</span>
+<span style=color:#f92672>xScaleTitle</span>: <span style=color:#ae81ff>Cost of Mitigation</span>
+<span style=color:#f92672>yScaleTitle</span>: <span style=color:#ae81ff>Risk Importance</span>
+</code></pre></div></div><div data-pane=toml class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>dataSetsDataPointLabelTemplate</span> = <span style=color:#e6db74>&#34;${point.RiskCode}\n${point.QuestionTitle}&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointPosXPath</span> = <span style=color:#e6db74>&#34;.REPORT.importance_number_of_100&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointPosYPath</span> = <span style=color:#e6db74>&#34;.REPORT.cost_number_of_100&#34;</span>
+<span style=color:#a6e22e>dataSetsDataPointsKeyToItem</span> = <span style=color:#66d9ef>true</span>
+<span style=color:#a6e22e>dataSetsKeyToLabel</span> = <span style=color:#66d9ef>true</span>
+<span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;well_architected_improvements&#34;</span>
+<span style=color:#a6e22e>labelDelegate</span> = <span style=color:#e6db74>&#34;DELEGATE&#34;</span>
+<span style=color:#a6e22e>labelDelete</span> = <span style=color:#e6db74>&#34;DELETE&#34;</span>
+<span style=color:#a6e22e>labelDoNow</span> = <span style=color:#e6db74>&#34;DO NOW&#34;</span>
+<span style=color:#a6e22e>labelToPlan</span> = <span style=color:#e6db74>&#34;TO PLAN&#34;</span>
+<span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;eisenhouwer&#34;</span>
+<span style=color:#a6e22e>xScaleTitle</span> = <span style=color:#e6db74>&#34;Cost of Mitigation&#34;</span>
+<span style=color:#a6e22e>yScaleTitle</span> = <span style=color:#e6db74>&#34;Risk Importance&#34;</span>
+</code></pre></div></div><div data-pane=json class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+   <span style=color:#f92672>&#34;dataSetsDataPointLabelTemplate&#34;</span>: <span style=color:#e6db74>&#34;${point.RiskCode}\n${point.QuestionTitle}&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointPosXPath&#34;</span>: <span style=color:#e6db74>&#34;.REPORT.importance_number_of_100&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointPosYPath&#34;</span>: <span style=color:#e6db74>&#34;.REPORT.cost_number_of_100&#34;</span>,
+   <span style=color:#f92672>&#34;dataSetsDataPointsKeyToItem&#34;</span>: <span style=color:#66d9ef>true</span>,
+   <span style=color:#f92672>&#34;dataSetsKeyToLabel&#34;</span>: <span style=color:#66d9ef>true</span>,
+   <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;well_architected_improvements&#34;</span>,
+   <span style=color:#f92672>&#34;labelDelegate&#34;</span>: <span style=color:#e6db74>&#34;DELEGATE&#34;</span>,
+   <span style=color:#f92672>&#34;labelDelete&#34;</span>: <span style=color:#e6db74>&#34;DELETE&#34;</span>,
+   <span style=color:#f92672>&#34;labelDoNow&#34;</span>: <span style=color:#e6db74>&#34;DO NOW&#34;</span>,
+   <span style=color:#f92672>&#34;labelToPlan&#34;</span>: <span style=color:#e6db74>&#34;TO PLAN&#34;</span>,
+   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;eisenhouwer&#34;</span>,
+   <span style=color:#f92672>&#34;xScaleTitle&#34;</span>: <span style=color:#e6db74>&#34;Cost of Mitigation&#34;</span>,
+   <span style=color:#f92672>&#34;yScaleTitle&#34;</span>: <span style=color:#e6db74>&#34;Risk Importance&#34;</span>
+}
+</code></pre></div></div></div></div><h3 id=output-1>Output
+<a class=anchor href=#output-1>#</a></h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>well_architected_improvements</span>:
+  <span style=color:#f92672>costOptimization</span>:
+    <span style=color:#f92672>cloud-financial-management</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.cloud-financial-management.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>cloud-financial-management</span>
+      <span style=color:#f92672>QuestionTitle</span>: <span style=color:#ae81ff>How do you implement cloud financial management?</span>
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>76.74060382008626</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>23.400850580624386</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>short</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>MEDIUM</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST01</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>cloud-financial-management</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>23.400850580624386</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>76.74060382008626</span>
+    <span style=color:#f92672>evaluate-cost-effort</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.evaluate-cost-effort.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>evaluate-cost-effort</span>
+      <span style=color:#f92672>QuestionTitle</span>: <span style=color:#ae81ff>How do you evaluate the cost of effort?</span>
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>57.779886148007584</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>25.392970613283993</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>long</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>MEDIUM</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST11</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>evaluate-cost-effort</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>25.392970613283993</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>57.779886148007584</span>
+    <span style=color:#f92672>govern-usage</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.govern-usage.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>govern-usage</span>
+      <span style=color:#f92672>QuestionTitle</span>: <span style=color:#ae81ff>How do you govern usage?</span>
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>11.606578115117017</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>32.231378439747424</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>short</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>HIGH</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST02</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>govern-usage</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>32.231378439747424</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>11.606578115117017</span>
+    <span style=color:#f92672>manage-demand-resources</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.manage-demand-resources.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>manage-demand-resources</span>
+      <span style=color:#f92672>QuestionTitle</span>: <span style=color:#ae81ff>How do you manage demand, and supply resources?</span>
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>89.52556993222429</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>9.406125135072086</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>long</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>HIGH</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST09</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>manage-demand-resources</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>9.406125135072086</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>89.52556993222429</span>
+    <span style=color:#f92672>monitor-usage</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.monitor-usage.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>monitor-usage</span>
+      <span style=color:#f92672>QuestionTitle</span>: <span style=color:#ae81ff>How do you monitor your cost and usage?</span>
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>84.97786211258696</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>58.14894410204381</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>short</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>HIGH</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST03</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>monitor-usage</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>58.14894410204381</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>84.97786211258696</span>
+    <span style=color:#f92672>type-size-number-resources</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.type-size-number-resources.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>costOptimization</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>type-size-number-resources</span>
+      <span style=color:#f92672>QuestionTitle</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        How do you meet cost targets when you select resource type, size and
+</span><span style=color:#e6db74>        number?</span>        
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>20.517560073937158</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>5.3496829769409855</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>long</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>MEDIUM</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>COST06</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>type-size-number-resources</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>5.3496829769409855</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>20.517560073937158</span>
+  <span style=color:#f92672>operationalExcellence</span>:
+    <span style=color:#f92672>dev-integ</span>:
+      <span style=color:#f92672>ImprovementPlanUrl</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        </span>        <span style=color:#ae81ff>https://wa.aws.amazon.com/wellarchitected/2024-06-27T08-00-00/TypeII/en/wellarchitected/wellarchitected.dev-integ.improvement-plan.en.html</span>
+      <span style=color:#f92672>ImprovementPlans</span>: []
+      <span style=color:#f92672>PillarId</span>: <span style=color:#ae81ff>operationalExcellence</span>
+      <span style=color:#f92672>QuestionId</span>: <span style=color:#ae81ff>dev-integ</span>
+      <span style=color:#f92672>QuestionTitle</span>: &gt;-<span style=color:#e6db74>
+</span><span style=color:#e6db74>        How do you reduce defects, ease remediation, and improve flow into
+</span><span style=color:#e6db74>        production?</span>        
+      <span style=color:#f92672>REPORT</span>:
+        <span style=color:#f92672>cost_number_of_100</span>: <span style=color:#ae81ff>69.80899568699938</span>
+        <span style=color:#f92672>importance_number_of_100</span>: <span style=color:#ae81ff>9.473732504374272</span>
+        <span style=color:#f92672>short-med-long</span>: <span style=color:#ae81ff>short</span>
+        <span style=color:#f92672>show</span>: <span style=color:#66d9ef>true</span>
+      <span style=color:#f92672>Risk</span>: <span style=color:#ae81ff>MEDIUM</span>
+      <span style=color:#f92672>RiskCode</span>: <span style=color:#ae81ff>OPS05</span>
+      <span style=color:#f92672>_label</span>: <span style=color:#ae81ff>dev-integ</span>
+      <span style=color:#f92672>x</span>: <span style=color:#ae81ff>9.473732504374272</span>
+      <span style=color:#f92672>&#39;y&#39;</span>: <span style=color:#ae81ff>69.80899568699938</span>
+</code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/quiqr/quiqr-book/commit/5fabedf2e8ec32cec2b303c1128556349ee87d4c title="Last modified by Pim Snel | December 4, 2024" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>December 4, 2024</span></a></div><div><a class="flex align-center" href=https://github.com/quiqr/quiqr-book/edit/main/content/docs/20-Quiqr-Developer-Reference/03-content-model/03-form-fields/data-field-types/eisenhouwer.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script src=/custom.js></script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#eisenhouwer>Eisenhouwer</a><ul><li><a href=#properties>Properties</a></li><li><a href=#sample>Sample</a><ul><li><a href=#configuration>Configuration</a></li><li><a href=#output>Output</a></li></ul></li><li><a href=#sample-2>Sample 2</a><ul><li><a href=#configuration-1>Configuration</a></li><li><a href=#output-1>Output</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

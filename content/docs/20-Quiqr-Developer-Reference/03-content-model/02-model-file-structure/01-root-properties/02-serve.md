@@ -13,5 +13,6 @@ used for the live preview server. The server listens to
 serve:
   - config: config.toml
     key: default
+    hugoHidePreviewSite: false
 {{</ code-toggle >}}
 

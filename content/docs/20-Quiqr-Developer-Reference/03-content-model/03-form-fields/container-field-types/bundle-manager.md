@@ -58,7 +58,6 @@ fields:
   - key: thumb
     type: bundle-image-thumbnail
 {{< /code-toggle >}}
-```
 
 ### Output
 
@@ -94,7 +93,6 @@ fields:
   - key: thumb
     type: bundle-image-thumbnail
 {{< /code-toggle >}}
-```
 
 ### Output
 

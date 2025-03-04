@@ -24,6 +24,7 @@ single collection dictionary.
 | hidePreviewIcon      | boolean                                  | optional  | Hide Preview Icon which opens the page in the browser                                                                                  |
 | hideExternalEditIcon | boolean                                  | optional  | Hide Enternal Editor Icon which opens the file in the OS Text Editor                                                                   |
 | hideSaveButton       | boolean                                  | optional  | Hide form Save button                                                                                                                  |
+| buildActions         | array of dictionaries                    | optional  | Defines buttons which triggers a custom [build actions](/docs/20-quiqr-developer-reference/03-content-model/04-build-actions/).        |
 | fields               | array of dictionaries                    | mandatory | These are the form input fields.                                                                                                       |
 | sortkey              | string                                   | optional  | can be set to a front matter key which will be used for sorting                                                                        |
 

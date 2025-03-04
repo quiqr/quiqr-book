@@ -24,7 +24,8 @@ These are the properties of a Single dictionary.
 | hideExternalEditIcon | boolean                                  | optional   | Hide Enternal Editor Icon which opens the file in the OS Text Editor                                         |
 | hideSaveButton       | boolean                                  | optional   | Hide form Save button                                                                                        |
 | pullOuterRootKey     | string                                   | optional   | This make files with outer arrays possible                                                                   |
-| fields               | array of dictionaries                    | mandatory | These are the form input fields.                                                                             |
+| buildActions         | array of dictionaries                    | optional   | Defines buttons which triggers a custom [build actions](/docs/20-quiqr-developer-reference/03-content-model/04-build-actions/).                                                       |
+| fields               | array of dictionaries                    | mandatory  | These are the form input fields.                                                                             |
 
 ## Example
 

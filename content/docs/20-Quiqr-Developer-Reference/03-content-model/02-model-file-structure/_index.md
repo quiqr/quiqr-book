@@ -1,6 +1,6 @@
 ---
 weight: 20
-title: Model File Structure
+title: Model Structure
 bookCollapseSection: true
 ---
 

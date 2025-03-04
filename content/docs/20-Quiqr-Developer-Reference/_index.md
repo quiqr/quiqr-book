@@ -1,5 +1,5 @@
 ---
-title: Quiqr Developer Reference
+title: Quiqr CMS Developer Reference
 weight: 20
 bookFlatSection: true
 ---

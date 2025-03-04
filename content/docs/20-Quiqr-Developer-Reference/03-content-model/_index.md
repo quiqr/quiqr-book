@@ -1,7 +1,7 @@
 ---
 title: Content Model
-weight: 40
-bookCollapseSection: true
+weight: 30
+bookCollapseSection: false
 ---
 
 # Content Model Configuration

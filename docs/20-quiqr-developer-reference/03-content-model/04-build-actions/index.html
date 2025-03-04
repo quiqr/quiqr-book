@@ -1,0 +1,202 @@
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.81.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Build Actions #  Build actions are custom actions which are triggered by a user clicking the action button. Build actions can be attached to a Single or a Collection object.
+A build action allows the user to use data stored in a Quiqr site object as input for an external program. The value that the external program returns can be displayed, or, if it is a filename, the user can open it."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Build Actions"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/04-build-actions/"><title>Build Actions | The Quiqr Book</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.00ba6b6ccc5ac45ee314577a5905949cf5222c5fb0af8e8b34102152121a491a.css integrity="sha256-ALprbMxaxF7jFFd6WQWUnPUiLF+wr46LNBAhUhIaSRo="><script defer src=/en.search.min.be6f45676f2319fcb33bdbcec098bb53dcd95966604717ee1bfef245f14d3c15.js integrity="sha256-vm9FZ28jGfyzO9vOwJi7U9zZWWZgRxfuG/7yRfFNPBU="></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk="></script><link rel=alternate type=application/rss+xml href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/04-build-actions/index.xml title="The Quiqr Book"><style>figure{text-align:center;font-size:smaller;text-indent:0;border:thin silver solid;margin-left:auto;margin-right:auto;display:table;margin:.5em;padding:1.5em;border-radius:8px;font-style:italic;xbox-shadow:0 1px 1px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.15),0 2px 2px rgba(0,0,0,.15),0 2px 4px rgba(0,0,0,.15)}.tab-button{margin-bottom:1px;position:relative;z-index:1;color:#333;border-color:#ccc;outline:none;background-color:#fff}.tab-pane code{background:#f1f2f2;border-radius:0}.tab-pane .chroma{background:0 0;padding:0}.tab-button.active{border-bottom-color:#f1f2f2;background-color:#d1d2d2}.tab-content .tab-pane{display:none}.tab-content .tab-pane.active{display:block}.tab-content .copy,.tab-content .copied{display:none}.tab-content .tab-pane.active+.copy,.tab-content .tab-pane.active+.copied{display:block}</style></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo-nav.svg alt=Logo><span>The Quiqr Book</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li class=book-section-flat><a href=https://book.quiqr.org/docs/10-getting-started/>Getting started</a><ul><li><a href=https://book.quiqr.org/docs/10-getting-started/01.installation/>Install Quiqr Desktop</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/10-getting-started/02.import-site/>Import Site</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/10-getting-started/10.quick-start-video/>Quick Start Video</a><ul></ul></li></ul></li><li class=book-section-flat><a href=https://book.quiqr.org/docs/15-site-and-cms-development/>Site and CMS Development</a><ul><li><a href=https://book.quiqr.org/docs/15-site-and-cms-development/01-user-roles/>User Roles</a><ul></ul></li></ul></li><li class=book-section-flat><span>Quiqr CMS Developer Reference</span><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/01-anatomy-of-quiqr-site/>Anatomy of a Quiqr Site</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/>Content Model</a><ul><li><input type=checkbox id=section-92bafdeae052bfe04b35f72d05793ffd class=toggle>
+<label for=section-92bafdeae052bfe04b35f72d05793ffd class="flex justify-between"><a>Model Structure</a></label><ul><li><input type=checkbox id=section-d30035a911d4ec12bc984c8cd4763b38 class=toggle>
+<label for=section-d30035a911d4ec12bc984c8cd4763b38 class="flex justify-between"><a>Root properties</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/01-build/>build</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/02-serve/>serve</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/03-hugover/>hugover</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/04-menu/>menu</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/05-singles/>single</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/06-collections/>collections</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/07-dynamics/>dynamics</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/02-includes/>Includes</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/03-partials/>Partials</a></li></ul></li><li><input type=checkbox id=section-4df9205443a321e264947f9b9208b1d8 class=toggle>
+<label for=section-4df9205443a321e264947f9b9208b1d8 class="flex justify-between"><a>Form Fields</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/>Container Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/accordion/>Accordion</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/bundle-manager/>Bundle manager</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/leaf-array/>Leaf array</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/nest/>Nest</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/pull/>Pull</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/container-field-types/section/>Section</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/>Data Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/boolean/>Boolean</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/chips/>Chips</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/color/>Color</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/date/>Date</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/easymde/>Easy Markdown Editor</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/eisenhouwer/>Eisenhouwer Matrix</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/fonticon-picker/>Font Icon Picker</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/font-picker/>Font Picker</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/hidden/>Hidden</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/image-select/>Image Select</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/markdown/>Markdown</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/number/>Number</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/readonly/>Readonly</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/select/>Select</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/select-from-query/>Select from Query</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/slider/>Slider</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/string/>String</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/data-field-types/uniq/>Uniq</a></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/>Layout Field Types</a><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/bundle-image-thumbnail/>Bundle image thumbnail</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/empty-line/>Empty line</a></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/03-form-fields/layout-field-types/info/>Info</a></li></ul></li></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/03-content-model/04-build-actions/ class=active>Build Actions</a><ul></ul></li></ul></li><li><input type=checkbox id=section-307b86ba94e104140617988ff9888eed class=toggle>
+<label for=section-307b86ba94e104140617988ff9888eed class="flex justify-between"><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/30-global-preferences/>Global Preferences</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/30-global-preferences/10-general/>General</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/30-global-preferences/20-variables/>Variables</a><ul></ul></li><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/30-global-preferences/30-advanced/>Advanced</a><ul></ul></li></ul></li><li><input type=checkbox id=section-07d20b150658a1af131bb247932421e7 class=toggle>
+<label for=section-07d20b150658a1af131bb247932421e7 class="flex justify-between"><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/50-examples/>Example Configurations</a></label><ul><li><a href=https://book.quiqr.org/docs/20-quiqr-developer-reference/50-examples/02-example-model-configuration/>Blog (single file)</a></li></ul></li></ul></li><li><input type=checkbox id=section-5d1472182103f7ea0db7d38ffdc9de69 class=toggle>
+<label for=section-5d1472182103f7ea0db7d38ffdc9de69 class="flex justify-between"><a href=https://book.quiqr.org/docs/50-quiqr-application-development/>Quiqr App. Developer Howto's</a></label><ul><li><a href=https://book.quiqr.org/docs/50-quiqr-application-development/10-create-a-new-field-type/>Create a new field type</a><ul></ul></li></ul></li><li class=book-section-flat><a href=https://book.quiqr.org/docs/80-release-notes/>Release Notes</a><ul></ul></li><li class=book-section-flat><a href=https://book.quiqr.org/docs/99-about-this-book/>About this book</a><ul></ul></li></ul><ul><li><a href=https://quiqr.org target=_blank rel=noopener>Quiqr Website</a></li><li><a href=https://github.com/quiqr/ target=_blank rel=noopener>github/quiqr</a></li><li><a href=https://twitter.com/QuiqrApp target=_blank rel=noopener>@QuiqrApp</a></li></ul></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<strong>Build Actions</strong>
+<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#build-actions>Build Actions</a><ul><li><a href=#variables>Variables</a></li><li><a href=#properties>Properties</a><ul><li><a href=#stdout_types>stdout_type&rsquo;s</a></li></ul></li><li><a href=#full-example-of-a-collection-object>Full example of a collection object.</a><ul><li><a href=#configuration>Configuration</a></li></ul></li></ul></li></ul></nav></aside></header><article class=markdown><h1 id=build-actions>Build Actions
+<a class=anchor href=#build-actions>#</a></h1><p>Build actions are custom actions which are triggered by a user clicking the action
+button. Build actions can be attached to a
+<a href=/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/05-singles/>Single</a>
+or a
+<a href=/docs/20-quiqr-developer-reference/03-content-model/02-model-file-structure/01-root-properties/06-collections/>Collection</a> object.</p><p>A build action allows the user to use data stored in a Quiqr site object as
+input for an external program. The value that the external program returns can
+be displayed, or, if it is a filename, the user can open it.</p><p>A typical use case for a build action would a PDF builds. Using
+<a href=https://pandoc.org/>Pandoc</a>
+or
+<a href=https://quarto.org/>Quarto</a> a markdown file could be converted to a nicely
+formatted PDF file.</p><h2 id=variables>Variables
+<a class=anchor href=#variables>#</a></h2><p>Before a build action is executed variables will be replaced by a their real
+values. There are standard Quiqr site variables like <code>SITE_PATH</code> and there
+are custom declared variables. The custom declared variables can be overruled
+in the
+<a href=/docs/20-quiqr-developer-reference/30-global-preferences/20-variables/>global variable
+preferences</a>
+of the installed Quiqr application.</p><p>A <code>%</code> symbol needs to be written before a variable name in the definition to
+let Quiqr know it should be replaced with the real value.</p><p>Available standard quiqr site variables:</p><ul><li>SITE_PATH: Is replaced with the root folder of the site. E.g. <code>/Users/pim/Quiqr/sites/my-documents</code>.</li><li>DOCUMENT_PATH: Is replaced with the path of the file which opened by the user. E.g. <code>/Users/pim/Quiqr/sites/my-documents/content/quotations/001-johnson.md</code>.</li></ul><h2 id=properties>Properties
+<a class=anchor href=#properties>#</a></h2><p>These are the properties of one build action.</p><table><thead><tr><th style=text-align:left>property</th><th style=text-align:left>value type</th><th style=text-align:left>optional</th><th style=text-align:left>description</th></tr></thead><tbody><tr><td style=text-align:left>key</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>Keys are for internal use and must be unique.</td></tr><tr><td style=text-align:left>button_text</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>Text displayed on the button.</td></tr><tr><td style=text-align:left>variables</td><td style=text-align:left>array with dictionaries</td><td style=text-align:left>optional</td><td style=text-align:left>Array with key value pairs containing variables. If they are used in the <code>command</code> or <code>args</code> strings. they serve as default values.</td></tr><tr><td style=text-align:left>execute</td><td style=text-align:left>dictionary</td><td style=text-align:left>mandatory</td><td style=text-align:left>Contains different settings to define the external program dispatch.</td></tr><tr><td style=text-align:left>execute.stdout_type</td><td style=text-align:left>string</td><td style=text-align:left>optional</td><td style=text-align:left>The stdout_type can be set to <code>file_path</code> or <code>ascii_message</code> or <code>message</code>.</td></tr><tr><td style=text-align:left>execute.unix</td><td style=text-align:left>dictionary</td><td style=text-align:left>mandatory</td><td style=text-align:left>Contains command and arguments to run on Linux and macOS systems.</td></tr><tr><td style=text-align:left>execute.unix.command</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.</td></tr><tr><td style=text-align:left>execute.unix.args</td><td style=text-align:left>array of strings</td><td style=text-align:left>optional</td><td style=text-align:left>All arguments used by the executable. Variables are replaced before execution.</td></tr><tr><td style=text-align:left>execute.windows</td><td style=text-align:left>dictionary</td><td style=text-align:left>optional</td><td style=text-align:left>Contains command and arguments to run on Linux and macOS systems.</td></tr><tr><td style=text-align:left>execute.windows.command</td><td style=text-align:left>string</td><td style=text-align:left>mandatory</td><td style=text-align:left>File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.</td></tr><tr><td style=text-align:left>execute.windows.args</td><td style=text-align:left>array of strings</td><td style=text-align:left>optional</td><td style=text-align:left>All arguments used by the executable. Variables are replaced before execution.</td></tr></tbody></table><h3 id=stdout_types>stdout_type&rsquo;s
+<a class=anchor href=#stdout_types>#</a></h3><ul><li><em>value = file_path</em> - When set to <code>file_path</code> a link to open the result file is displayed after the build action was finished succesfully.</li><li><em>value = message</em> - When set to <code>message</code> the return value is displayed after the build action was finished succesfully.</li><li><em>value = ascii_message</em> - When set to <code>ascii_message</code> the return value is displayed after the build action was finished succesfully. A fixed font is used to maintain correct layout.</li></ul><h2 id=full-example-of-a-collection-object>Full example of a collection object.
+<a class=anchor href=#full-example-of-a-collection-object>#</a></h2><h3 id=configuration>Configuration
+<a class=anchor href=#configuration>#</a></h3><div class="code relative" id=./quiqr/model/includes/collections/quotation><div class="code-nav flex flex-nowrap items-stretch"><div class="san-serif f6 dib lh-solid pl2 pv2 mr2">./quiqr/model/includes/collections/quotation.</div><button data-toggle-tab=yaml class="tab-button active ba san-serif f6 dib lh-solid ph2 pv2">yaml</button>&nbsp;
+<button data-toggle-tab=toml class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">toml</button>&nbsp;
+<button data-toggle-tab=json class="tab-button ba san-serif f6 dib lh-solid ph2 pv2">json</button>&nbsp;</div><div class=tab-content><div data-pane=yaml class="code-copy-content nt3 tab-pane active"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>amount</span>: <span style=color:#ae81ff>2</span>
+<span style=color:#f92672>build_actions</span>:
+- <span style=color:#f92672>button_text</span>: <span style=color:#ae81ff>Build PDF</span>
+  <span style=color:#f92672>execute</span>:
+    <span style=color:#f92672>stdout_type</span>: <span style=color:#ae81ff>file_path</span>
+    <span style=color:#f92672>unix</span>:
+      <span style=color:#f92672>args</span>:
+      - <span style=color:#e6db74>&#39;%DOCUMENT_PATH&#39;</span>
+      - -<span style=color:#ae81ff>t</span>
+      - <span style=color:#ae81ff>pdf</span>
+      <span style=color:#f92672>command</span>: <span style=color:#e6db74>&#39;%PANDOC_EXECUTABLE&#39;</span>
+    <span style=color:#f92672>windows</span>:
+      <span style=color:#f92672>args</span>:
+      - <span style=color:#ae81ff>pandoc.exe</span>
+      - <span style=color:#e6db74>&#39;%DOCUMENT_PATH&#39;</span>
+      - -<span style=color:#ae81ff>t</span>
+      - <span style=color:#ae81ff>pdf</span>
+      <span style=color:#f92672>command</span>: <span style=color:#ae81ff>wsl</span>
+  <span style=color:#f92672>key</span>: <span style=color:#ae81ff>magic_make_pdf</span>
+  <span style=color:#f92672>variables</span>:
+  - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>PANDOC_EXECUTABLE</span>
+  - <span style=color:#f92672>value</span>: <span style=color:#ae81ff>/usr/bin/pandoc</span>
+<span style=color:#f92672>dataformat</span>: <span style=color:#ae81ff>yml</span>
+<span style=color:#f92672>extension</span>: <span style=color:#ae81ff>md</span>
+<span style=color:#f92672>fields</span>:
+- <span style=color:#f92672>fields</span>:
+  - <span style=color:#f92672>key</span>: <span style=color:#ae81ff>company_name</span>
+    <span style=color:#f92672>type</span>: <span style=color:#ae81ff>string</span>
+  - <span style=color:#f92672>key</span>: <span style=color:#ae81ff>contact_person</span>
+    <span style=color:#f92672>type</span>: <span style=color:#ae81ff>string</span>
+  <span style=color:#f92672>groupdata</span>: <span style=color:#66d9ef>true</span>
+  <span style=color:#f92672>key</span>: <span style=color:#ae81ff>client</span>
+  <span style=color:#f92672>type</span>: <span style=color:#ae81ff>pull</span>
+- <span style=color:#f92672>key</span>: <span style=color:#ae81ff>date</span>
+  <span style=color:#f92672>type</span>: <span style=color:#ae81ff>string</span>
+- <span style=color:#f92672>key</span>: <span style=color:#ae81ff>mainContent</span>
+  <span style=color:#f92672>title</span>: <span style=color:#ae81ff>Main Content</span>
+  <span style=color:#f92672>type</span>: <span style=color:#ae81ff>markdown</span>
+<span style=color:#f92672>folder</span>: <span style=color:#ae81ff>content/quotations</span>
+<span style=color:#f92672>hidePreviewIcon</span>: <span style=color:#66d9ef>true</span>
+<span style=color:#f92672>itemtitle</span>: <span style=color:#ae81ff>Quotation</span>
+<span style=color:#f92672>key</span>: <span style=color:#ae81ff>sample_field</span>
+<span style=color:#f92672>title</span>: <span style=color:#ae81ff>Quotations</span>
+<span style=color:#f92672>type</span>: <span style=color:#ae81ff>empty-line</span>
+</code></pre></div></div><div data-pane=toml class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>amount</span> = <span style=color:#ae81ff>2</span>
+<span style=color:#a6e22e>dataformat</span> = <span style=color:#e6db74>&#34;yml&#34;</span>
+<span style=color:#a6e22e>extension</span> = <span style=color:#e6db74>&#34;md&#34;</span>
+<span style=color:#a6e22e>folder</span> = <span style=color:#e6db74>&#34;content/quotations&#34;</span>
+<span style=color:#a6e22e>hidePreviewIcon</span> = <span style=color:#66d9ef>true</span>
+<span style=color:#a6e22e>itemtitle</span> = <span style=color:#e6db74>&#34;Quotation&#34;</span>
+<span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;sample_field&#34;</span>
+<span style=color:#a6e22e>title</span> = <span style=color:#e6db74>&#34;Quotations&#34;</span>
+<span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;empty-line&#34;</span>
+
+[[<span style=color:#a6e22e>build_actions</span>]]
+  <span style=color:#a6e22e>button_text</span> = <span style=color:#e6db74>&#34;Build PDF&#34;</span>
+  <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;magic_make_pdf&#34;</span>
+  [<span style=color:#a6e22e>build_actions</span>.<span style=color:#a6e22e>execute</span>]
+    <span style=color:#a6e22e>stdout_type</span> = <span style=color:#e6db74>&#34;file_path&#34;</span>
+    [<span style=color:#a6e22e>build_actions</span>.<span style=color:#a6e22e>execute</span>.<span style=color:#a6e22e>unix</span>]
+      <span style=color:#a6e22e>args</span> = [<span style=color:#e6db74>&#34;%DOCUMENT_PATH&#34;</span>, <span style=color:#e6db74>&#34;-t&#34;</span>, <span style=color:#e6db74>&#34;pdf&#34;</span>]
+      <span style=color:#a6e22e>command</span> = <span style=color:#e6db74>&#34;%PANDOC_EXECUTABLE&#34;</span>
+    [<span style=color:#a6e22e>build_actions</span>.<span style=color:#a6e22e>execute</span>.<span style=color:#a6e22e>windows</span>]
+      <span style=color:#a6e22e>args</span> = [<span style=color:#e6db74>&#34;pandoc.exe&#34;</span>, <span style=color:#e6db74>&#34;%DOCUMENT_PATH&#34;</span>, <span style=color:#e6db74>&#34;-t&#34;</span>, <span style=color:#e6db74>&#34;pdf&#34;</span>]
+      <span style=color:#a6e22e>command</span> = <span style=color:#e6db74>&#34;wsl&#34;</span>
+
+  [[<span style=color:#a6e22e>build_actions</span>.<span style=color:#a6e22e>variables</span>]]
+    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;PANDOC_EXECUTABLE&#34;</span>
+
+  [[<span style=color:#a6e22e>build_actions</span>.<span style=color:#a6e22e>variables</span>]]
+    <span style=color:#a6e22e>value</span> = <span style=color:#e6db74>&#34;/usr/bin/pandoc&#34;</span>
+
+[[<span style=color:#a6e22e>fields</span>]]
+  <span style=color:#a6e22e>groupdata</span> = <span style=color:#66d9ef>true</span>
+  <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;client&#34;</span>
+  <span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;pull&#34;</span>
+
+  [[<span style=color:#a6e22e>fields</span>.<span style=color:#a6e22e>fields</span>]]
+    <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;company_name&#34;</span>
+    <span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;string&#34;</span>
+
+  [[<span style=color:#a6e22e>fields</span>.<span style=color:#a6e22e>fields</span>]]
+    <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;contact_person&#34;</span>
+    <span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;string&#34;</span>
+
+[[<span style=color:#a6e22e>fields</span>]]
+  <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;date&#34;</span>
+  <span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;string&#34;</span>
+
+[[<span style=color:#a6e22e>fields</span>]]
+  <span style=color:#a6e22e>key</span> = <span style=color:#e6db74>&#34;mainContent&#34;</span>
+  <span style=color:#a6e22e>title</span> = <span style=color:#e6db74>&#34;Main Content&#34;</span>
+  <span style=color:#a6e22e>type</span> = <span style=color:#e6db74>&#34;markdown&#34;</span>
+</code></pre></div></div><div data-pane=json class="code-copy-content nt3 tab-pane"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+   <span style=color:#f92672>&#34;amount&#34;</span>: <span style=color:#ae81ff>2</span>,
+   <span style=color:#f92672>&#34;build_actions&#34;</span>: [
+      {
+         <span style=color:#f92672>&#34;button_text&#34;</span>: <span style=color:#e6db74>&#34;Build PDF&#34;</span>,
+         <span style=color:#f92672>&#34;execute&#34;</span>: {
+            <span style=color:#f92672>&#34;stdout_type&#34;</span>: <span style=color:#e6db74>&#34;file_path&#34;</span>,
+            <span style=color:#f92672>&#34;unix&#34;</span>: {
+               <span style=color:#f92672>&#34;args&#34;</span>: [
+                  <span style=color:#e6db74>&#34;%DOCUMENT_PATH&#34;</span>,
+                  <span style=color:#e6db74>&#34;-t&#34;</span>,
+                  <span style=color:#e6db74>&#34;pdf&#34;</span>
+               ],
+               <span style=color:#f92672>&#34;command&#34;</span>: <span style=color:#e6db74>&#34;%PANDOC_EXECUTABLE&#34;</span>
+            },
+            <span style=color:#f92672>&#34;windows&#34;</span>: {
+               <span style=color:#f92672>&#34;args&#34;</span>: [
+                  <span style=color:#e6db74>&#34;pandoc.exe&#34;</span>,
+                  <span style=color:#e6db74>&#34;%DOCUMENT_PATH&#34;</span>,
+                  <span style=color:#e6db74>&#34;-t&#34;</span>,
+                  <span style=color:#e6db74>&#34;pdf&#34;</span>
+               ],
+               <span style=color:#f92672>&#34;command&#34;</span>: <span style=color:#e6db74>&#34;wsl&#34;</span>
+            }
+         },
+         <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;magic_make_pdf&#34;</span>,
+         <span style=color:#f92672>&#34;variables&#34;</span>: [
+            {
+               <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;PANDOC_EXECUTABLE&#34;</span>
+            },
+            {
+               <span style=color:#f92672>&#34;value&#34;</span>: <span style=color:#e6db74>&#34;/usr/bin/pandoc&#34;</span>
+            }
+         ]
+      }
+   ],
+   <span style=color:#f92672>&#34;dataformat&#34;</span>: <span style=color:#e6db74>&#34;yml&#34;</span>,
+   <span style=color:#f92672>&#34;extension&#34;</span>: <span style=color:#e6db74>&#34;md&#34;</span>,
+   <span style=color:#f92672>&#34;fields&#34;</span>: [
+      {
+         <span style=color:#f92672>&#34;fields&#34;</span>: [
+            {
+               <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;company_name&#34;</span>,
+               <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;string&#34;</span>
+            },
+            {
+               <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;contact_person&#34;</span>,
+               <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;string&#34;</span>
+            }
+         ],
+         <span style=color:#f92672>&#34;groupdata&#34;</span>: <span style=color:#66d9ef>true</span>,
+         <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;client&#34;</span>,
+         <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;pull&#34;</span>
+      },
+      {
+         <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;date&#34;</span>,
+         <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;string&#34;</span>
+      },
+      {
+         <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;mainContent&#34;</span>,
+         <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Main Content&#34;</span>,
+         <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;markdown&#34;</span>
+      }
+   ],
+   <span style=color:#f92672>&#34;folder&#34;</span>: <span style=color:#e6db74>&#34;content/quotations&#34;</span>,
+   <span style=color:#f92672>&#34;hidePreviewIcon&#34;</span>: <span style=color:#66d9ef>true</span>,
+   <span style=color:#f92672>&#34;itemtitle&#34;</span>: <span style=color:#e6db74>&#34;Quotation&#34;</span>,
+   <span style=color:#f92672>&#34;key&#34;</span>: <span style=color:#e6db74>&#34;sample_field&#34;</span>,
+   <span style=color:#f92672>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Quotations&#34;</span>,
+   <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;empty-line&#34;</span>
+}
+</code></pre></div></div></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/quiqr/quiqr-book/commit/cd940ad58f31fe72a3a8c73c7480c1af717ea811 title="Last modified by Pim Snel | March 4, 2025" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>March 4, 2025</span></a></div><div><a class="flex align-center" href=https://github.com/quiqr/quiqr-book/edit/main/content/docs/20-Quiqr-Developer-Reference/03-content-model/04-build-actions/_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span></a></div></div><script src=/custom.js></script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#build-actions>Build Actions</a><ul><li><a href=#variables>Variables</a></li><li><a href=#properties>Properties</a><ul><li><a href=#stdout_types>stdout_type&rsquo;s</a></li></ul></li><li><a href=#full-example-of-a-collection-object>Full example of a collection object.</a><ul><li><a href=#configuration>Configuration</a></li></ul></li></ul></li></ul></nav></div></aside></main></body></html>

@@ -39,19 +39,21 @@ Available standard quiqr site variables:
 
 These are the properties of one build action.
 
-| property                | value type              | optional   | description                                                                                                                                              |
-|:------------------------|:------------------------|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| key                     | string                  | mandatory  | Keys are for internal use and must be unique.                                                                                                            |
-| button_text             | string                  | mandatory  | Text displayed on the button.                                                                                                                            |
-| execute                 | dictionary              | mandatory  | Contains different settings to define the external program dispatch.                                                                                     |
-| execute.variables       | array with dictionaries | optional   | Array with key value pairs containing variable name and their values. If they are used in the `command` or `args` strings. they serve as default values. |
-| execute.stdout_type     | string                  | optional   | The stdout_type can be set to `file_path` or `ascii_message` or `message`.                                                                               |
-| execute.unix            | dictionary              | mandatory  | Contains command and arguments to run on Linux and macOS systems.                                                                                        |
-| execute.unix.command    | string                  | mandatory  | File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.             |
-| execute.unix.args       | array of strings        | optional   | All arguments used by the executable. Variables are replaced before execution.                                                                           |
-| execute.windows         | dictionary              | optional   | Contains command and arguments to run on Linux and macOS systems.                                                                                        |
-| execute.windows.command | string                  | mandatory  | File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.             |
-| execute.windows.args    | array of strings        | optional   | All arguments used by the executable. Variables are replaced before execution.                                                                           |
+| property                          | value type              | optional   | description                                                                                                                                                                                  |
+|:----------------------------------|:------------------------|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| key                               | string                  | mandatory  | Keys are for internal use and must be unique.                                                                                                                                                |
+| button_text                       | string                  | mandatory  | Text displayed on the button.                                                                                                                                                                |
+| execute                           | dictionary              | mandatory  | Contains different settings to define the external program dispatch.                                                                                                                         |
+| execute.variables                 | array with dictionaries | optional   | Array with key value pairs containing variable name and their values. If they are used in the `command` or `args` strings. they serve as default values. See example below.                  |
+| execute.stdout_type               | string                  | optional   | The stdout_type can be set to `file_path` or `ascii_message` or `message`.                                                                                                                   |
+| execute.unix                      | dictionary              | mandatory  | Contains command and arguments to run on Linux and macOS systems.                                                                                                                            |
+| execute.unix.command              | string                  | mandatory  | File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.                                                 |
+| execute.unix.args                 | array of strings        | optional   | All arguments used by the executable. Variables are replaced before execution.                                                                                                               |
+| execute.unix.file_path_replace    | array of dictionaries   | optional   | Array with key value pairs containing search and replace strings for the returned file_path. This is introduced to remap the Windows WSL map to Windows Native file path. See example below. |
+| execute.windows                   | dictionary              | optional   | Contains command and arguments to run on Linux and macOS systems.                                                                                                                            |
+| execute.windows.command           | string                  | mandatory  | File path to the executable to run. Be aware to enter full paths as Quiqr has no PATH variable set. Variables are replaced before execution.                                                 |
+| execute.windows.args              | array of strings        | optional   | All arguments used by the executable. Variables are replaced before execution.                                                                                                               |
+| execute.windows.file_path_replace | array of dictionaries   | optional   | Array with key value pairs containing search and replace strings for the returned file_path. This is introduced to remap the Windows WSL map to Windows Native file path. See example below. |
 
 ### stdout_type's
 
@@ -100,7 +102,9 @@ build_actions:
       windows:
         command: 'wsl'
         args: ['pandoc.exe', '%DOCUMENT_PATH', '-t', 'pdf']
-
+        file_path_replace:
+          - search: /mnt/c
+            replace: "C:"
 key: sample_field
 type: empty-line
 amount: 2

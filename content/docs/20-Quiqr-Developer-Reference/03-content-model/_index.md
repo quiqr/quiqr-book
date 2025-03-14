@@ -15,8 +15,8 @@ YAML, JSON or TOML-formatting.
 
 The model is split up in several main properties:
 
-- **build**: information how to serve the hugo website
-- **serve**: information how to build the hugo website
+- **build**: information how to build the hugo website
+- **serve**: information how to serve the hugo website
 - **hugover**: the hugo version to use. The correct hugo version is downloaded automatically.
 - **collections**: main key for collections with pages. E.g. _blog posts_
 - **singles**: main key for single page configurations. E.g. _home page_ or _about_
@@ -25,7 +25,7 @@ The model is split up in several main properties:
 
 ## Model File Structure
 
-Quiqr has helpers two organize complex models and prevent redundant
+Quiqr has helpers to organize complex models and prevent redundant
 configuration code. ```Includes``` are used to split the main-file into
 seperate files and partials makes it possible to reuse configuration code.
 
